@@ -6,8 +6,8 @@ os:
 
 env:
   matrix:
-    - PHARO_VERSION=50
-    - PHARO_VERSION=60
+    - DB=sqlite3 PHARO_VERSION=50
+    - DB=sqlite3 PHARO_VERSION=60
 
 
 addons:
