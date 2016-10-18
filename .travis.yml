@@ -27,7 +27,7 @@ install:
   - "./scripts/install-packages.sh"
 
 before_script:
-  - ./pharo-ui Pharo.image eval --save "GAContinuousIntegrationConfiguration new configureSqlite3"
+  - ./pharo Pharo.image eval --save "GAContinuousIntegrationConfiguration new configureSqlite3"
 
 script:
- - "./pharo Pharo.image test Garage.*"
+ - "./pharo Pharo.image test --no-xterm --fail-on-failure Garage.*"
