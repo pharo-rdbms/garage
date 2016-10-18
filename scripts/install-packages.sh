@@ -2,6 +2,6 @@
 Metacello new 
 	baseline: 'Garage';
 	repository: 'filetree://.';
-	load: 'sqlite3'.
+	load: '$1'.
 Smalltalk snapshot: true andQuit: true.
 "
