@@ -1,0 +1,14 @@
+{
+	"category" : "Garage-Sqlite3-Errors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PierceNg 3/29/2014 20:17",
+	"instvars" : [
+		 ],
+	"name" : "GASqlite3NotOpen",
+	"pools" : [
+		 ],
+	"super" : "GASqlite3Error",
+	"type" : "normal" }

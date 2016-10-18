@@ -1,0 +1,16 @@
+{
+	"category" : "Garage-Sqlite3",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"database",
+		"handle",
+		"isOpen" ],
+	"name" : "GASqlite3Driver",
+	"pools" : [
+		 ],
+	"super" : "GADriver",
+	"type" : "normal" }

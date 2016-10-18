@@ -1,0 +1,15 @@
+{
+	"category" : "Garage-Sqlite3",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"data",
+		"resultSet" ],
+	"name" : "GASqlite3Row",
+	"pools" : [
+		 ],
+	"super" : "GARow",
+	"type" : "normal" }

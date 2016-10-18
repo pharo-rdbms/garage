@@ -1,0 +1,3 @@
+accessing
+resultCode
+	^ resultCode

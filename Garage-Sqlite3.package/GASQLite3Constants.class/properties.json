@@ -1,0 +1,22 @@
+{
+	"category" : "Garage-Sqlite3-FFI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"BLOB",
+		"BUSY",
+		"FLOAT",
+		"INTEGER",
+		"LOCKED",
+		"MISUSE",
+		"NULL",
+		"OK",
+		"TEXT" ],
+	"commentStamp" : "GuillermoPolito 4/17/2015 14:05",
+	"instvars" : [
+		 ],
+	"name" : "GASQLite3Constants",
+	"pools" : [
+		 ],
+	"super" : "SharedPool",
+	"type" : "normal" }

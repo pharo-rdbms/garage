@@ -1,0 +1,1 @@
+I represent the SQLITE_LOCKED condition.

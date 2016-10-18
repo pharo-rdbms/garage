@@ -1,0 +1,16 @@
+{
+	"category" : "Garage-Sqlite3-FFI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"DataTypeMap",
+		"Singleton",
+		"TypeMap" ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "GASqlite3FFI",
+	"pools" : [
+		"GASQLite3Constants" ],
+	"super" : "Object",
+	"type" : "normal" }

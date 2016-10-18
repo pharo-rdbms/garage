@@ -1,0 +1,1 @@
+I represent the SQLite API 'sqlite3' C-level type.

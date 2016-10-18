@@ -1,0 +1,14 @@
+{
+	"category" : "Garage-Sqlite3-Errors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"resultCode" ],
+	"name" : "GASqlite3Error",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

@@ -1,0 +1,1 @@
+I provide SQLIte's constants.

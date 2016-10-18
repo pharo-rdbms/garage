@@ -1,0 +1,4 @@
+tests
+newFixture
+	
+	^ GADriverSQLiteTestFixture new

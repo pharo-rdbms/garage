@@ -1,0 +1,4 @@
+accessing
+affectedRows
+	
+	^ affectedRows

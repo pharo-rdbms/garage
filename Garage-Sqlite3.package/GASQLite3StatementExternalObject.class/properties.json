@@ -1,0 +1,14 @@
+{
+	"category" : "Garage-Sqlite3-FFI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GuillermoPolito 4/17/2015 14:05",
+	"instvars" : [
+		 ],
+	"name" : "GASQLite3StatementExternalObject",
+	"pools" : [
+		 ],
+	"super" : "FFIExternalObject",
+	"type" : "normal" }

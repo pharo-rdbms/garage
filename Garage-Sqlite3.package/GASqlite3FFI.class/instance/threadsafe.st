@@ -1,0 +1,3 @@
+accessing
+threadsafe
+	^ self apiThreadsafe
