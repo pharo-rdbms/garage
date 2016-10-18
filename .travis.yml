@@ -37,7 +37,14 @@ install:
   - ./scripts/install-packages.sh DB
 
 before_script:
-  - ./pharo Pharo.image eval --save "GAContinuousIntegrationConfiguration new configureSqlite3"
+  - case "$DB" in
+      sqlite3)
+        ./pharo Pharo.image eval --save "GAContinuousIntegrationConfiguration new configureSqlite3"
+        ;;
+      *)
+        echo $"Unsupported database: $DB"
+        exit 1
+    esac
 
 script:
   - ./pharo Pharo.image test --no-xterm --fail-on-failure "Garage.*"
