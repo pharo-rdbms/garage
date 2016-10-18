@@ -1,13 +1,13 @@
-language: c
+language: generic
 
 os:
   - linux
   - osx
 
 env:
-  global:
-  - PHARO_VERSION=50
-  - PHARO_VERSION=60
+  matrix:
+    - PHARO_VERSION=50
+    - PHARO_VERSION=60
 
 
 addons:
