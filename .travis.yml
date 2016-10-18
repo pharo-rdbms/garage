@@ -1,22 +1,33 @@
-language: smalltalk
-sudo: false
+language: c
 
 os:
   - linux
   - osx
 
+env:
+  global:
+  - PHARO_VERSION=50
+  - PHARO_VERSION=60
+
+
 addons:
   apt:
     packages:
+    - lib32asound2
+    - lib32z1
+    - lib32bz2-1.0
+    - libssl1.0.0:i386
+    - libfreetype6:i386
     - libsqlite3:i386
 
-smalltalk:
-  - Pharo-5.0
-  - Pharo-6.0
+
+install:
+  - ln -s /usr/lib/i386-linux-gnu/libsqlite3.so.0 libsqlite3
+  - "wget -O - get.pharo.org/${PHARO_VERSION}+vm | bash"
+  - "./scripts/install-packages.sh"
 
 before_script:
-  - ln -s /usr/lib/i386-linux-gnu/libsqlite3.so.0 libsqlite3
   - ./pharo-ui Pharo.image eval --save "GAContinuousIntegrationConfiguration new configureSqlite3"
 
-smalltalk_config:
-  - .sqlite3.ston
+script:
+ - "./pharo Pharo.image test Garage.*"
