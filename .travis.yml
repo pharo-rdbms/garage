@@ -37,7 +37,7 @@ install:
   - ./scripts/install-packages.sh $DB
 
 before_script:
-  - if [[ "$DB" == "sqlite" ]]; then
+  - if [[ "$DB" == "sqlite3" ]]; then
         ./pharo Pharo.image eval --save "GAContinuousIntegrationConfiguration new configureSqlite3"
     else
       echo "Unsupported database ${DB}";
