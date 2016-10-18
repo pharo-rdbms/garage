@@ -42,7 +42,7 @@ before_script:
         ./pharo Pharo.image eval --save "GAContinuousIntegrationConfiguration new configureSqlite3"
         ;;
       *)
-        echo $"Unsupported database: $DB"
+        echo "Unsupported database ${DB}"
         exit 1
     esac
 
