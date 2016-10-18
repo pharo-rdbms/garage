@@ -1,0 +1,9 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline: 'Garage',
+      #load : [ 'sqlite3' ],
+      #version : #bleedingEdge
+    }
+  ]
+}

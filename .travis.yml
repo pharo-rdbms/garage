@@ -1,0 +1,21 @@
+language: smalltalk
+sudo: false
+
+os:
+  - linux
+
+addons:
+  apt:
+    packages:
+    - libsqlite3:i386
+
+smalltalk:
+  - Pharo-5.0
+  - Pharo-6.0
+
+before_script:
+  - ln -s /usr/lib/i386-linux-gnu/libsqlite3.so.0 libsqlite3
+  - ./pharo-ui Pharo.image eval --save "GAContinuousIntegrationConfiguration new configureSqlite3"
+
+smalltalk_config:
+  - .sqlite3.ston
