@@ -34,7 +34,7 @@ install:
   # We prepare SQLITE, Pharo and garage packages
   - ln -s /usr/lib/i386-linux-gnu/libsqlite3.so.0 libsqlite3
   - wget -O - get.pharo.org/${PHARO_VERSION}+vm | bash
-  - ./scripts/install-packages.sh DB
+  - ./scripts/install-packages.sh $DB
 
 before_script:
   - case "$DB" in
