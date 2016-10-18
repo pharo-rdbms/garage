@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfGarage",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfGarage",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
