@@ -1,0 +1,1 @@
+I am a garage result set representing a result from a database query. I provide a collection-like interface with methods such as #at:, #collect:, #do:, #select.

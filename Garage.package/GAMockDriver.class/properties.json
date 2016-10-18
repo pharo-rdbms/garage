@@ -1,0 +1,14 @@
+{
+	"category" : "Garage-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"id" ],
+	"name" : "GAMockDriver",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

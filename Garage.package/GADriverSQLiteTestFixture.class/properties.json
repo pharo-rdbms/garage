@@ -1,0 +1,14 @@
+{
+	"category" : "Garage-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GADriverSQLiteTestFixture",
+	"pools" : [
+		 ],
+	"super" : "GADriverTestFixture",
+	"type" : "normal" }

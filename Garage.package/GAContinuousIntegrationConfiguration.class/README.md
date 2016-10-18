@@ -1,0 +1,1 @@
+This class has methods to configure the connection strings to run the tests from the CI infrastructure

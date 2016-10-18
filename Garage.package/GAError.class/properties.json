@@ -1,0 +1,14 @@
+{
+	"category" : "Garage-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GAError",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

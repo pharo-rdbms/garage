@@ -1,0 +1,18 @@
+{
+	"category" : "Garage-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"setupConnection",
+		"connection",
+		"connectionString",
+		"setupConnectionString",
+		"options" ],
+	"name" : "GADriverTestFixture",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

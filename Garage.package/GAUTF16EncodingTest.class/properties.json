@@ -1,0 +1,14 @@
+{
+	"category" : "Garage-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GAUTF16EncodingTest",
+	"pools" : [
+		 ],
+	"super" : "GAEncodingTest",
+	"type" : "normal" }

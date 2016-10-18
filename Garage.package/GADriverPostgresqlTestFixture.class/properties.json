@@ -1,0 +1,14 @@
+{
+	"category" : "Garage-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GADriverPostgresqlTestFixture",
+	"pools" : [
+		 ],
+	"super" : "GADriverTestFixture",
+	"type" : "normal" }

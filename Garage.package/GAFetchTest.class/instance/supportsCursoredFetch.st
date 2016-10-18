@@ -1,0 +1,4 @@
+testing
+supportsCursoredFetch
+	
+	^ conn supportsCursoredFetch

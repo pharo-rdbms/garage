@@ -1,0 +1,15 @@
+{
+	"category" : "Garage-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Fixture" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"conn",
+		"fixture" ],
+	"name" : "GADriverTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

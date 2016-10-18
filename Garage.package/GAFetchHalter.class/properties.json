@@ -1,0 +1,14 @@
+{
+	"category" : "Garage-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fetches" ],
+	"name" : "GAFetchHalter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

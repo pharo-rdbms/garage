@@ -1,0 +1,14 @@
+{
+	"category" : "Garage-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GADriverMysqlTestFixture",
+	"pools" : [
+		 ],
+	"super" : "GADriverTestFixture",
+	"type" : "normal" }

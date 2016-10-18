@@ -1,0 +1,15 @@
+{
+	"category" : "Garage-Driver",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GuillermoPolito 5/5/2015 16:15",
+	"instvars" : [
+		"resultSet",
+		"position" ],
+	"name" : "GAResultSetReadStream",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

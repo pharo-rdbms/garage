@@ -1,0 +1,14 @@
+{
+	"category" : "Garage-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GAQueryTest",
+	"pools" : [
+		 ],
+	"super" : "GADriverTest",
+	"type" : "normal" }
