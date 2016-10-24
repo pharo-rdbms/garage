@@ -34,6 +34,9 @@ before_install:
         sudo apt-get install sqlite3=3.7.15.1-1~travis1;
         sudo sqlite3 -version;
     fi;
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+        pg_ctl -D /usr/local/var/postgres start;
+    fi;
 
 install:
   # We prepare SQLITE, Pharo and garage packages
