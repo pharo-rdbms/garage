@@ -1,4 +1,5 @@
 as yet unclassified
 tearDown
-	setupConnection ifNotNil: #close.
-	setupConnection := nil
+
+	setupConnection ifNotNilDo: #close.
+	setupConnection := nil.

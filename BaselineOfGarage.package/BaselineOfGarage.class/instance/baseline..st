@@ -4,7 +4,6 @@ baseline: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'baseline'.
-		spec repository: 'http://www.smalltalkhub.com/mc/DBXTalk/Garage/main'.
 		spec 
 			project: 'JSON' with: [
 				spec
