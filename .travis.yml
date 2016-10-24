@@ -16,6 +16,7 @@ env:
 
 
 addons:
+  postgresql: "9.4"
   apt:
     packages:
     - lib32asound2
