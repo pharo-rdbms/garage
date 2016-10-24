@@ -42,6 +42,6 @@ install:
   - ./scripts/install-packages.sh $DB
 
 before_script:
-  - ./scripts/setup.sh
+  - ./scripts/setup.sh $DB
 script:
   - ./pharo Pharo.image test --no-xterm --fail-on-failure "Garage.*"
