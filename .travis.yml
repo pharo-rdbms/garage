@@ -44,10 +44,10 @@ install:
 before_script:
   - if [[ "$DB" == "sqlite3" ]]; then
         ./pharo Pharo.image eval --save "GAContinuousIntegrationConfiguration new configureSqlite3";
-    else if [[ "$DB" == "postgresV2"]]; then
+    elif [[ "$DB" == "postgresV2"]]; then
         psql -c 'create user sodbxtest createdb createuser password 'postgres';' -U postgres;
         psql -c 'alter user postgres password 'postgres';' -U postgres;
-        ./pharo Pharo.image eval --save "GAContinuousIntegrationConfiguration new configurePostgresql";
+       ./pharo Pharo.image eval --save "GAContinuousIntegrationConfiguration new configurePostgresql";
     else
       echo "Unsupported database ${DB}";
     fi;
