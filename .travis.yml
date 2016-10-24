@@ -42,14 +42,6 @@ install:
   - ./scripts/install-packages.sh $DB
 
 before_script:
-  - if [[ "$DB" == "sqlite3" ]]; then
-        ./pharo Pharo.image eval --save "GAContinuousIntegrationConfiguration new configureSqlite3";
-    elif [[ "$DB" == "postgresV2"]] then
-        psql -c 'create user sodbxtest createdb createuser password 'postgres';' -U postgres;
-        psql -c 'alter user postgres password 'postgres';' -U postgres;
-       ./pharo Pharo.image eval --save "GAContinuousIntegrationConfiguration new configurePostgresql";
-    else
-      echo "Unsupported database ${DB}";
-    fi;
+  - ./scripts/setup.sh
 script:
   - ./pharo Pharo.image test --no-xterm --fail-on-failure "Garage.*"
