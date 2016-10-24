@@ -36,8 +36,9 @@ before_install:
         sudo sqlite3 -version;
     fi;
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
-        export PG_DATA=$(brew --prefix)/var/postgres;
+        export PG_DATA=$(brew --prefix)/var/postgres; 
         pg_ctl -w start -l postgres.log --pgdata ${PG_DATA};
+        cat postgres.log;
     fi;
 
 install:
