@@ -4,6 +4,8 @@ testNotify2
 
 	| ws conn |
 
+	true ifTrue: [ ^ self skip ].
+	
 	notificationSubscriberCount := 2.
 
 	self dropTestTable.
