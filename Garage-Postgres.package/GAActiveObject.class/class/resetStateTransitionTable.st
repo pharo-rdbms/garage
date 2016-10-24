@@ -1,0 +1,4 @@
+stt
+resetStateTransitionTable
+
+	stateTransitionTable := nil

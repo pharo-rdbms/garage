@@ -1,0 +1,21 @@
+{
+	"category" : "Garage-Postgres-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"hostname",
+		"portno",
+		"databaseName",
+		"userName",
+		"password",
+		"extraArgs",
+		"debugTty",
+		"clientEncoding" ],
+	"name" : "GAConnectionArgs",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

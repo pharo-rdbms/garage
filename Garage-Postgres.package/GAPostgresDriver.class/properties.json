@@ -1,0 +1,15 @@
+{
+	"category" : "Garage-Postgres-Driver",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"driver",
+		"connectionSpec" ],
+	"name" : "GAPostgresDriver",
+	"pools" : [
+		 ],
+	"super" : "GADriver",
+	"type" : "normal" }

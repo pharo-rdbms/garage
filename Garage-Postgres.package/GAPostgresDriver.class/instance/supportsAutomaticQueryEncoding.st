@@ -1,0 +1,4 @@
+testing
+supportsAutomaticQueryEncoding
+	
+	^ true

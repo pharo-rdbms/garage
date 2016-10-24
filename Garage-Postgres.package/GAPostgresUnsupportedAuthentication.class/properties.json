@@ -1,0 +1,14 @@
+{
+	"category" : "Garage-Postgres-Errors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GAPostgresUnsupportedAuthentication",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

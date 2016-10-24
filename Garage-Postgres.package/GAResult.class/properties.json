@@ -1,0 +1,17 @@
+{
+	"category" : "Garage-Postgres-Driver",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"connection",
+		"resultSets",
+		"errorResponse",
+		"functionResult" ],
+	"name" : "GAResult",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

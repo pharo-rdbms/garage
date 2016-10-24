@@ -1,0 +1,16 @@
+{
+	"category" : "Garage-Postgres-Driver",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"description",
+		"nullFields",
+		"rawData" ],
+	"name" : "GAAsciiRow",
+	"pools" : [
+		 ],
+	"super" : "GAPacket",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "Garage-Postgres-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"oid",
+		"arguments" ],
+	"name" : "GAFunctionCall",
+	"pools" : [
+		 ],
+	"super" : "GAPacket",
+	"type" : "normal" }

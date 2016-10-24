@@ -1,0 +1,14 @@
+{
+	"category" : "Garage-Postgres-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GANotificationSubscriber",
+	"pools" : [
+		 ],
+	"super" : "GAActiveObject",
+	"type" : "normal" }

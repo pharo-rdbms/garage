@@ -1,0 +1,4 @@
+iterating
+rows
+
+	^ self allRows

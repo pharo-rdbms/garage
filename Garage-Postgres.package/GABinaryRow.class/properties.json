@@ -1,0 +1,14 @@
+{
+	"category" : "Garage-Postgres-Driver",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GABinaryRow",
+	"pools" : [
+		 ],
+	"super" : "GAAsciiRow",
+	"type" : "normal" }

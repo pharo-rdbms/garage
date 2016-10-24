@@ -1,0 +1,4 @@
+converters
+characterConverter
+
+	^[ :s | s ]

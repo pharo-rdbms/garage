@@ -1,0 +1,4 @@
+accessing
+port
+	
+	^ connectionSpec portno

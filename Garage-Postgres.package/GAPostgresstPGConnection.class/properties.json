@@ -1,0 +1,15 @@
+{
+	"category" : "Garage-Postgres-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"useConnectionDefaults",
+		"notificationSubscriberCount" ],
+	"name" : "GAPostgresstPGConnection",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

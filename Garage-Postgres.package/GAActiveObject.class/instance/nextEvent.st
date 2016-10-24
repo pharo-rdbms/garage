@@ -1,0 +1,4 @@
+private-sa
+nextEvent
+
+	^ #CantHappen

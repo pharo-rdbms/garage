@@ -1,0 +1,17 @@
+{
+	"category" : "Garage-Postgres-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fieldName",
+		"typeOid",
+		"typeSize",
+		"typeModifier" ],
+	"name" : "GAColumnDescription",
+	"pools" : [
+		 ],
+	"super" : "GAPacket",
+	"type" : "normal" }

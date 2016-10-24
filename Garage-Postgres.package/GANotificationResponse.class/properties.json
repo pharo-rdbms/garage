@@ -1,0 +1,15 @@
+{
+	"category" : "Garage-Postgres-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"processId",
+		"conditionName" ],
+	"name" : "GANotificationResponse",
+	"pools" : [
+		 ],
+	"super" : "GAPacket",
+	"type" : "normal" }

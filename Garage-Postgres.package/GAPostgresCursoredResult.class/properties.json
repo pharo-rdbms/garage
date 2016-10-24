@@ -1,0 +1,20 @@
+{
+	"category" : "Garage-Postgres-Driver",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"connection",
+		"fetchSize",
+		"statement",
+		"rows",
+		"finished",
+		"name",
+		"fetchListener" ],
+	"name" : "GAPostgresCursoredResult",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,31 @@
+{
+	"category" : "Garage-Postgres-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"DefaultConnectionArgs",
+		"DefaultTraceLevel" ],
+	"commentStamp" : "TudorGirba 3/3/2014 07:29",
+	"instvars" : [
+		"socket",
+		"readBuffer",
+		"readIndex",
+		"lastReadIndex",
+		"writeBuffer",
+		"processId",
+		"secretKey",
+		"sql",
+		"functionCallOid",
+		"functionCallArgs",
+		"copyStream",
+		"result",
+		"connectionArgs",
+		"notificationSubscribers",
+		"fieldConverters",
+		"sqlStringConverter",
+		"receivingTextConverter" ],
+	"name" : "GAConnection",
+	"pools" : [
+		 ],
+	"super" : "GAActiveObject",
+	"type" : "normal" }

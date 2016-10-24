@@ -1,0 +1,4 @@
+accessing
+statement
+
+	^ statement

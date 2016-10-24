@@ -1,0 +1,4 @@
+stt
+buildStateTransitionTable
+
+	^IdentityDictionary new

@@ -1,0 +1,15 @@
+{
+	"category" : "Garage-Postgres-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"type",
+		"salt" ],
+	"name" : "GAAuthentication",
+	"pools" : [
+		 ],
+	"super" : "GAPacket",
+	"type" : "normal" }

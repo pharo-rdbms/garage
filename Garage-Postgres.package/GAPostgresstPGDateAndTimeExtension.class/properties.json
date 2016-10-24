@@ -1,0 +1,14 @@
+{
+	"category" : "Garage-Postgres-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GAPostgresstPGDateAndTimeExtension",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "Garage-Postgres-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"processId",
+		"secretKey" ],
+	"name" : "GACancelRequest",
+	"pools" : [
+		 ],
+	"super" : "GAPacket",
+	"type" : "normal" }

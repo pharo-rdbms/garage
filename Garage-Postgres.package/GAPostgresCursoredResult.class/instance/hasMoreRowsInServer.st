@@ -1,0 +1,4 @@
+testing
+hasMoreRowsInServer
+	
+	^ finished not

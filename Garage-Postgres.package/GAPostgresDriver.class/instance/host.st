@@ -1,0 +1,4 @@
+accessing
+host
+	
+	^ connectionSpec hostname

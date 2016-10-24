@@ -1,0 +1,18 @@
+{
+	"category" : "Garage-Postgres-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"version",
+		"databaseName",
+		"userName",
+		"extraArgs",
+		"debugTty" ],
+	"name" : "GAPostgresStartupPacket",
+	"pools" : [
+		 ],
+	"super" : "GAPacket",
+	"type" : "normal" }
