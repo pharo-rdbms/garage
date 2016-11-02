@@ -3,7 +3,7 @@ sqlite3)
   ./pharo Pharo.image eval --save "GAContinuousIntegrationConfiguration new configureSqlite3"
   ;;
 mysql)
-  mysql -uroot -p -e "CREATE USER sodbxtest@localhost IDENTIFIED BY 'sodbxtest';"
+  mysql -uroot -e "CREATE USER sodbxtest@localhost IDENTIFIED BY 'sodbxtest';"
   ./pharo Pharo.image eval --save "GAContinuousIntegrationConfiguration new configureMysql"
   ;;
 postgresV2)
