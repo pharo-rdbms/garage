@@ -1,0 +1,16 @@
+{
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"stmtId",
+		"params",
+		"cursoredFetch" ],
+	"name" : "GAMysqlCommandExecute",
+	"pools" : [
+		 ],
+	"super" : "GAMysqlCommandBase",
+	"type" : "normal" }

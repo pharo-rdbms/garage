@@ -1,0 +1,3 @@
+testing
+isOfMaxLength
+	^ length = MaxPacketLength

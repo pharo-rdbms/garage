@@ -1,0 +1,3 @@
+command configuration
+commandCode
+	self subclassResponsibility 

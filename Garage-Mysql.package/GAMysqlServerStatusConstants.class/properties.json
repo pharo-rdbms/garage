@@ -1,0 +1,22 @@
+{
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"ServerMoreResultsExist",
+		"ServerQueryNoGoodIndexUsed",
+		"ServerQueryNoIndexUsed",
+		"ServerStatusAutoCommit",
+		"ServerStatusCursorExists",
+		"ServerStatusDbDropped",
+		"ServerStatusInTranssaction",
+		"ServerStatusLastRowSent",
+		"ServerStatusNoBackslashEscapes" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GAMysqlServerStatusConstants",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

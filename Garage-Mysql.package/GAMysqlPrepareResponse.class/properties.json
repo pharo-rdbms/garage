@@ -1,0 +1,18 @@
+{
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"prepareOkay",
+		"paramDescriptors",
+		"paramEof",
+		"columnDescriptors",
+		"columnEof" ],
+	"name" : "GAMysqlPrepareResponse",
+	"pools" : [
+		 ],
+	"super" : "GAMysqlResult",
+	"type" : "normal" }

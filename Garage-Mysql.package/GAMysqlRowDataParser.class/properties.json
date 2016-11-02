@@ -1,0 +1,15 @@
+{
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"driver",
+		"columnDescriptors" ],
+	"name" : "GAMysqlRowDataParser",
+	"pools" : [
+		 ],
+	"super" : "GAMysqlPacket",
+	"type" : "normal" }

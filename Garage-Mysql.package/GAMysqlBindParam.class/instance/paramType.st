@@ -1,0 +1,4 @@
+accessing
+paramType
+	^ paramType 
+	

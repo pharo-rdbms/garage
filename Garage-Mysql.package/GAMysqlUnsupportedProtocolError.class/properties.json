@@ -1,0 +1,14 @@
+{
+	"category" : "Garage-Mysql-Errors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GAMysqlUnsupportedProtocolError",
+	"pools" : [
+		 ],
+	"super" : "GAMysqlDriverError",
+	"type" : "normal" }

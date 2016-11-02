@@ -1,0 +1,20 @@
+{
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"message",
+		"fieldCount",
+		"affectedRows",
+		"insertId",
+		"warningCount",
+		"serverStatus",
+		"nextResult" ],
+	"name" : "GAMysqlOkay",
+	"pools" : [
+		 ],
+	"super" : "GAMysqlResult",
+	"type" : "normal" }

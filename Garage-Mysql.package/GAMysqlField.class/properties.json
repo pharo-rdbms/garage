@@ -1,0 +1,36 @@
+{
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"AutoIncrFlag",
+		"BinaryFlag",
+		"BlobFlag",
+		"EnumFlag",
+		"MultiKeyFlag",
+		"NotNullFlag",
+		"PrimaryKeyFlag",
+		"SetFlag",
+		"TimestampFlag",
+		"UniqueKeyFlag",
+		"UnsignedFlag",
+		"ZeroFillFlag" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"catalog",
+		"db",
+		"table",
+		"orgTable",
+		"name",
+		"orgName",
+		"charSet",
+		"type",
+		"flags",
+		"default",
+		"decimals",
+		"length" ],
+	"name" : "GAMysqlField",
+	"pools" : [
+		 ],
+	"super" : "GAMysqlPacket",
+	"type" : "normal" }

@@ -1,0 +1,19 @@
+{
+	"category" : "Garage-Mysql-Driver",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"host",
+		"port",
+		"user",
+		"password",
+		"database",
+		"options" ],
+	"name" : "GAMysqlConnectionData",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,16 @@
+{
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"dataBytes",
+		"statementId",
+		"paramNum" ],
+	"name" : "GAMysqlCommandSendLongData",
+	"pools" : [
+		 ],
+	"super" : "GAMysqlCommandBase",
+	"type" : "normal" }

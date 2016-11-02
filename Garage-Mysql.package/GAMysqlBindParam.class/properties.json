@@ -1,0 +1,20 @@
+{
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"connection",
+		"paramValue",
+		"paramType",
+		"newParamBound",
+		"unsignedFlag",
+		"declaredUnsigned",
+		"sentAsLongData" ],
+	"name" : "GAMysqlBindParam",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

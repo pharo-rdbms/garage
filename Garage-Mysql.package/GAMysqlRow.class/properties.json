@@ -1,0 +1,15 @@
+{
+	"category" : "Garage-Mysql-Driver",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"columnDescriptors",
+		"columnValues" ],
+	"name" : "GAMysqlRow",
+	"pools" : [
+		 ],
+	"super" : "GARow",
+	"type" : "normal" }

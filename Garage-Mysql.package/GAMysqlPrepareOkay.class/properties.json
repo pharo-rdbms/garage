@@ -1,0 +1,17 @@
+{
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"warningCount",
+		"numColumns",
+		"numParams",
+		"stmtId" ],
+	"name" : "GAMysqlPrepareOkay",
+	"pools" : [
+		 ],
+	"super" : "GAMysqlPacket",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ah 3/13/2010 10:21",
+	"instvars" : [
+		 ],
+	"name" : "GAMysqlResult",
+	"pools" : [
+		 ],
+	"super" : "GAMysqlPacket",
+	"type" : "normal" }

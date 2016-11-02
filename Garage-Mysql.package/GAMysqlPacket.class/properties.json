@@ -1,0 +1,32 @@
+{
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"CapCompress",
+		"CapConnectWithDb",
+		"CapFoundRows",
+		"CapIgnoreSigpipe",
+		"CapIgnoreSpace",
+		"CapInteractive",
+		"CapLocalFiles",
+		"CapLongFlag",
+		"CapLongPassword",
+		"CapMultiResults",
+		"CapMultiStatements",
+		"CapNoSchema",
+		"CapOdbc",
+		"CapProtocol41",
+		"CapReserved",
+		"CapSecureConnection",
+		"CapSsl",
+		"CapTransactions" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"inStream",
+		"discriminator" ],
+	"name" : "GAMysqlPacket",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

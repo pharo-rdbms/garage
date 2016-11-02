@@ -1,0 +1,14 @@
+{
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [
+		"defaultInstance" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GuillermoPolito 5/5/2015 10:55",
+	"instvars" : [
+		 ],
+	"name" : "GAMysqlBinReader",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

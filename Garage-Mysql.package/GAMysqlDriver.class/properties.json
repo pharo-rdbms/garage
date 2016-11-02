@@ -1,0 +1,16 @@
+{
+	"category" : "Garage-Mysql-Driver",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "GuillermoPolito 5/5/2015 10:12",
+	"instvars" : [
+		"connectionSpec",
+		"netSession",
+		"handshakeInfo" ],
+	"name" : "GAMysqlDriver",
+	"pools" : [
+		 ],
+	"super" : "GADriver",
+	"type" : "normal" }

@@ -1,0 +1,18 @@
+{
+	"category" : "Garage-Mysql-Driver",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"stmtId",
+		"params",
+		"rsContext",
+		"cursoredFetch",
+		"fetchSize" ],
+	"name" : "GAMysqlStatement",
+	"pools" : [
+		 ],
+	"super" : "GAStatement",
+	"type" : "normal" }
