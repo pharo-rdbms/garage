@@ -2,6 +2,7 @@ language: generic
 
 services:
   - postgresql
+  - mysql
 
 os:
   - linux
@@ -13,6 +14,8 @@ env:
     - DB=sqlite3 PHARO_VERSION=60
     - DB=postgresV2 PHARO_VERSION=50
     - DB=postgresV2 PHARO_VERSION=60
+    - DB=mysql PHARO_VERSION=50
+    - DB=mysql PHARO_VERSION=60
 
 
 addons:
