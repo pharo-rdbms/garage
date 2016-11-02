@@ -3,7 +3,10 @@ sqlite3)
   ./pharo Pharo.image eval --save "GAContinuousIntegrationConfiguration new configureSqlite3"
   ;;
 mysql)
+  mysql -uroot -e "CREATE DATABASE sodbxtest /*\!40100 DEFAULT CHARACTER SET utf8 */;"
   mysql -uroot -e "CREATE USER sodbxtest@localhost IDENTIFIED BY 'sodbxtest';"
+  mysql -uroot -e "GRANT ALL PRIVILEGES ON sodbxtest.* TO 'sodbxtest'@'localhost';"
+  mysql -uroot -e "FLUSH PRIVILEGES;"
   ./pharo Pharo.image eval --save "GAContinuousIntegrationConfiguration new configureMysql"
   ;;
 postgresV2)
