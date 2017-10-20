@@ -11,11 +11,14 @@ os:
 env:
   matrix:
     - DB=sqlite3 PHARO_VERSION=50
-    - DB=sqlite3 PHARO_VERSION=60
-    - DB=postgresV2 PHARO_VERSION=50
-    - DB=postgresV2 PHARO_VERSION=60
     - DB=mysql PHARO_VERSION=50
-    - DB=mysql PHARO_VERSION=60
+    - DB=postgresV2 PHARO_VERSION=50
+    - DB=sqlite3 PHARO_VERSION=61
+    - DB=mysql PHARO_VERSION=61
+    - DB=postgresV2 PHARO_VERSION=61
+    - DB=sqlite3 PHARO_VERSION=70
+    - DB=mysql PHARO_VERSION=70
+    - DB=postgresV2 PHARO_VERSION=70
 
 
 addons:
