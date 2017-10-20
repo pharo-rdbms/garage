@@ -1,10 +1,10 @@
 {
-	"category" : "Garage-Mysql-Driver",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "ah 3/5/2010 09:24",
+	"super" : "GAResultSet",
+	"category" : "Garage-Mysql-Driver",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"header",
 		"fields",
@@ -12,9 +12,8 @@
 		"rows",
 		"rowsEof",
 		"statement",
-		"fetchListener" ],
+		"fetchListener"
+	],
 	"name" : "GAMysqlResultSet",
-	"pools" : [
-		 ],
-	"super" : "GAResultSet",
-	"type" : "normal" }
+	"type" : "normal"
+}

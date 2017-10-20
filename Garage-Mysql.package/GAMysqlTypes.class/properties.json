@@ -1,11 +1,15 @@
 {
+	"commentStamp" : "",
+	"super" : "Object",
 	"category" : "Garage-Mysql-Protocol",
 	"classinstvars" : [
 		"blobTypes",
 		"dateTimeTypes",
 		"integerTypes",
 		"stringTypes",
-		"realTypes" ],
+		"realTypes"
+	],
+	"pools" : [ ],
 	"classvars" : [
 		"TypeBIT",
 		"TypeBLOB",
@@ -33,12 +37,9 @@
 		"TypeTINYBLOB",
 		"TypeVARCHAR",
 		"TypeVARSTRING",
-		"TypeYEAR" ],
-	"commentStamp" : "",
-	"instvars" : [
-		 ],
+		"TypeYEAR"
+	],
+	"instvars" : [ ],
 	"name" : "GAMysqlTypes",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

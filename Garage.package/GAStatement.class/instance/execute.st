@@ -2,5 +2,5 @@ execute
 execute
 
 	"It executes the current statement."
-	fetchListener ifNotNilDo: #fetchOccurred.
+	fetchListener ifNotNil: #fetchOccurred.
 	^ connection execute: statement.

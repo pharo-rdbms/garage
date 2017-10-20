@@ -1,14 +1,13 @@
 {
-	"category" : "Garage-Postgres-Driver",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"fetchSize" ],
-	"name" : "GAPostgresStatement",
-	"pools" : [
-		 ],
 	"super" : "GAStatement",
-	"type" : "normal" }
+	"category" : "Garage-Postgres-Driver",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fetchSize"
+	],
+	"name" : "GAPostgresStatement",
+	"type" : "normal"
+}

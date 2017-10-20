@@ -1,14 +1,13 @@
 {
-	"category" : "Garage-Mysql-Protocol",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"statementId" ],
-	"name" : "GAMysqlCommandResetStatement",
-	"pools" : [
-		 ],
 	"super" : "GAMysqlCommandBase",
-	"type" : "normal" }
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"statementId"
+	],
+	"name" : "GAMysqlCommandResetStatement",
+	"type" : "normal"
+}

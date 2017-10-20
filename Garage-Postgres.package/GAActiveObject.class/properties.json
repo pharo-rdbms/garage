@@ -1,16 +1,17 @@
 {
+	"commentStamp" : "",
+	"super" : "Object",
 	"category" : "Garage-Postgres-Protocol",
 	"classinstvars" : [
-		"stateTransitionTable" ],
-	"classvars" : [
-		 ],
-	"commentStamp" : "",
+		"stateTransitionTable"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"trace",
 		"state",
-		"events" ],
+		"events"
+	],
 	"name" : "GAActiveObject",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

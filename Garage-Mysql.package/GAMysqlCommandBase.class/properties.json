@@ -1,7 +1,9 @@
 {
+	"commentStamp" : "GuillermoPolito 5/5/2015 10:55",
+	"super" : "Object",
 	"category" : "Garage-Mysql-Protocol",
-	"classinstvars" : [
-		 ],
+	"classinstvars" : [ ],
+	"pools" : [ ],
 	"classvars" : [
 		"ComChangeUser",
 		"ComCreateDb",
@@ -20,14 +22,13 @@
 		"ComStmtFetch",
 		"ComStmtPrepare",
 		"ComStmtReset",
-		"ComStmtSendLongData" ],
-	"commentStamp" : "GuillermoPolito 5/5/2015 10:55",
+		"ComStmtSendLongData"
+	],
 	"instvars" : [
 		"session",
 		"fetchListener",
-		"driver" ],
+		"driver"
+	],
 	"name" : "GAMysqlCommandBase",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

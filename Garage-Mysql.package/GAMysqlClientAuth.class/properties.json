@@ -1,10 +1,10 @@
 {
-	"category" : "Garage-Mysql-Protocol",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "GAMysqlPacket",
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"user",
 		"password",
@@ -13,9 +13,8 @@
 		"clientCaps",
 		"charset",
 		"serverCaps",
-		"scrambleBuffMore" ],
+		"scrambleBuffMore"
+	],
 	"name" : "GAMysqlClientAuth",
-	"pools" : [
-		 ],
-	"super" : "GAMysqlPacket",
-	"type" : "normal" }
+	"type" : "normal"
+}

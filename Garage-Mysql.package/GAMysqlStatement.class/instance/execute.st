@@ -5,7 +5,7 @@ execute
 	cursoredFetch ifTrue: [ self prepare ].
 	
 	prepared ifFalse: [ 
-		fetchListener ifNotNilDo: #fetchOccurred.
+		fetchListener ifNotNil: #fetchOccurred.
 		^ connection basicQuery: statement ].
 	
 	resp := self resetStmt.

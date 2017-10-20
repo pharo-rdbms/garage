@@ -1,16 +1,15 @@
 {
+	"commentStamp" : "",
+	"super" : "Object",
 	"category" : "Garage-Mysql-Protocol",
 	"classinstvars" : [
 		"seedOne",
 		"maxValue",
-		"seedTwo" ],
-	"classvars" : [
-		 ],
-	"commentStamp" : "",
-	"instvars" : [
-		 ],
+		"seedTwo"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
 	"name" : "GAMysqlHelper",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

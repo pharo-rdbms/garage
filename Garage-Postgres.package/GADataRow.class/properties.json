@@ -1,14 +1,13 @@
 {
-	"category" : "Garage-Postgres-Driver",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"dictionary" ],
-	"name" : "GADataRow",
-	"pools" : [
-		 ],
 	"super" : "Object",
-	"type" : "variable" }
+	"category" : "Garage-Postgres-Driver",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"dictionary"
+	],
+	"name" : "GADataRow",
+	"type" : "variable"
+}
