@@ -1,14 +1,13 @@
 {
-	"category" : "Garage-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"conn" ],
-	"name" : "GAConnectionStringTest",
-	"pools" : [
-		 ],
 	"super" : "TestCase",
-	"type" : "normal" }
+	"category" : "Garage-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"conn"
+	],
+	"name" : "GAConnectionStringTest",
+	"type" : "normal"
+}

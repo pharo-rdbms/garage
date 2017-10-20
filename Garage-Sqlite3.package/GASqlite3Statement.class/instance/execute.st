@@ -6,7 +6,7 @@ execute
 	self reset.
 	self basicExecute: [ :theStatement | | generatedKey |
 		generatedKey := GASqlite3FFI current lastInsertRowId: connection handle.
-		fetchListener ifNotNilDo: #fetchOccurred.
+		fetchListener ifNotNil: #fetchOccurred.
 		^ GASqlite3ResultSet new
 			statement: theStatement;
 			generatedKey: generatedKey;

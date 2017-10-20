@@ -1,14 +1,11 @@
 {
-	"category" : "Garage-CI",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "GuillermoPolito 4/17/2015 16:41",
-	"instvars" : [
-		 ],
-	"name" : "GAContinuousIntegrationConfiguration",
-	"pools" : [
-		 ],
 	"super" : "Object",
-	"type" : "normal" }
+	"category" : "Garage-CI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GAContinuousIntegrationConfiguration",
+	"type" : "normal"
+}

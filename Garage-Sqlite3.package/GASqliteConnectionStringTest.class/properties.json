@@ -1,14 +1,11 @@
 {
-	"category" : "Garage-Sqlite3-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "GASqliteConnectionStringTest",
-	"pools" : [
-		 ],
 	"super" : "TestCase",
-	"type" : "normal" }
+	"category" : "Garage-Sqlite3-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GASqliteConnectionStringTest",
+	"type" : "normal"
+}

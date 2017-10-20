@@ -1,15 +1,16 @@
 {
-	"category" : "Garage-Driver",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		"Drivers" ],
 	"commentStamp" : "GuillermoPolito 5/5/2015 15:28",
+	"super" : "Object",
+	"category" : "Garage-Driver",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Drivers"
+	],
 	"instvars" : [
 		"connectionString",
-		"encoding" ],
+		"encoding"
+	],
 	"name" : "GADriver",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

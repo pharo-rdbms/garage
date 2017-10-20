@@ -1,14 +1,11 @@
 {
-	"category" : "Garage-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "GAPreparedStamentTest",
-	"pools" : [
-		 ],
 	"super" : "GADriverTest",
-	"type" : "normal" }
+	"category" : "Garage-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GAPreparedStamentTest",
+	"type" : "normal"
+}

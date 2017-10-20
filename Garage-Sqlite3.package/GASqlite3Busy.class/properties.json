@@ -1,14 +1,11 @@
 {
-	"category" : "Garage-Sqlite3-Errors",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "GASqlite3Busy",
-	"pools" : [
-		 ],
 	"super" : "GASqlite3Error",
-	"type" : "normal" }
+	"category" : "Garage-Sqlite3-Errors",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GASqlite3Busy",
+	"type" : "normal"
+}

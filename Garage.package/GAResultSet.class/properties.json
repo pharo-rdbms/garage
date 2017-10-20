@@ -1,14 +1,11 @@
 {
-	"category" : "Garage-Driver",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "GuillermoPolito 5/5/2015 16:05",
-	"instvars" : [
-		 ],
-	"name" : "GAResultSet",
-	"pools" : [
-		 ],
 	"super" : "Object",
-	"type" : "normal" }
+	"category" : "Garage-Driver",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GAResultSet",
+	"type" : "normal"
+}

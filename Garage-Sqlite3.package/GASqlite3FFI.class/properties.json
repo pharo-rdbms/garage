@@ -1,16 +1,17 @@
 {
+	"commentStamp" : "<historical>",
+	"super" : "Object",
 	"category" : "Garage-Sqlite3-FFI",
-	"classinstvars" : [
-		 ],
+	"classinstvars" : [ ],
+	"pools" : [
+		"GASQLite3Constants"
+	],
 	"classvars" : [
 		"DataTypeMap",
 		"Singleton",
-		"TypeMap" ],
-	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
+		"TypeMap"
+	],
+	"instvars" : [ ],
 	"name" : "GASqlite3FFI",
-	"pools" : [
-		"GASQLite3Constants" ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

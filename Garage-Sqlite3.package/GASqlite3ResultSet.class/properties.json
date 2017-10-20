@@ -1,10 +1,10 @@
 {
-	"category" : "Garage-Sqlite3",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "GAResultSet",
+	"category" : "Garage-Sqlite3",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"db",
 		"statement",
@@ -13,9 +13,8 @@
 		"columnTypes",
 		"rows",
 		"affectedRows",
-		"generatedKey" ],
+		"generatedKey"
+	],
 	"name" : "GASqlite3ResultSet",
-	"pools" : [
-		 ],
-	"super" : "GAResultSet",
-	"type" : "normal" }
+	"type" : "normal"
+}
