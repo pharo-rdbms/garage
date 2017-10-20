@@ -33,14 +33,6 @@ addons:
     - libsqlite3-0:i386
 
 before_install:
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
-        sudo apt-get autoremove sqlite3;
-        sudo apt-add-repository -y ppa:travis-ci/sqlite3;
-        sudo apt-get -y update;
-        sudo apt-cache show sqlite3;
-        sudo apt-get install sqlite3=3.7.15.1-1~travis1;
-        sudo sqlite3 -version;
-    fi;
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
         export PG_DATA=$(brew --prefix)/var/postgres;
         rm -rf ${PG_DATA} && initdb ${PG_DATA} -E utf8;
