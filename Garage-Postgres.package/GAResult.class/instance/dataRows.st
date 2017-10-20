@@ -1,5 +1,5 @@
 accessing-convenience
 dataRows
 
-	^ self lastResultSet ifNotNilDo: [ :rs |
+	^ self lastResultSet ifNotNil: [ :rs |
 		rs dataRows ]

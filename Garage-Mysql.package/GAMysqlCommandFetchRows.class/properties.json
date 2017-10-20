@@ -1,17 +1,16 @@
 {
-	"category" : "Garage-Mysql-Protocol",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "GAMysqlCommandBase",
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"stmtId",
 		"numRows",
 		"mapResultsToNativeTypes",
-		"resultSetContext" ],
+		"resultSetContext"
+	],
 	"name" : "GAMysqlCommandFetchRows",
-	"pools" : [
-		 ],
-	"super" : "GAMysqlCommandBase",
-	"type" : "normal" }
+	"type" : "normal"
+}

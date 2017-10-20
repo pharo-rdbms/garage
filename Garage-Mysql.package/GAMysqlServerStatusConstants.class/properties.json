@@ -1,7 +1,9 @@
 {
+	"commentStamp" : "",
+	"super" : "Object",
 	"category" : "Garage-Mysql-Protocol",
-	"classinstvars" : [
-		 ],
+	"classinstvars" : [ ],
+	"pools" : [ ],
 	"classvars" : [
 		"ServerMoreResultsExist",
 		"ServerQueryNoGoodIndexUsed",
@@ -11,12 +13,9 @@
 		"ServerStatusDbDropped",
 		"ServerStatusInTranssaction",
 		"ServerStatusLastRowSent",
-		"ServerStatusNoBackslashEscapes" ],
-	"commentStamp" : "",
-	"instvars" : [
-		 ],
+		"ServerStatusNoBackslashEscapes"
+	],
+	"instvars" : [ ],
 	"name" : "GAMysqlServerStatusConstants",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

@@ -1,19 +1,18 @@
 {
-	"category" : "Garage-Mysql-Protocol",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "GAMysqlCommandBase",
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"user",
 		"password",
 		"database",
 		"charset",
 		"scrambleBuff",
-		"scrambledPassword" ],
+		"scrambledPassword"
+	],
 	"name" : "GAMysqlCommandChangeUser",
-	"pools" : [
-		 ],
-	"super" : "GAMysqlCommandBase",
-	"type" : "normal" }
+	"type" : "normal"
+}

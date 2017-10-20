@@ -1,14 +1,13 @@
 {
-	"category" : "Garage-Postgres-Protocol",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"queryString" ],
-	"name" : "GAQuery",
-	"pools" : [
-		 ],
 	"super" : "GAPacket",
-	"type" : "normal" }
+	"category" : "Garage-Postgres-Protocol",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"queryString"
+	],
+	"name" : "GAQuery",
+	"type" : "normal"
+}

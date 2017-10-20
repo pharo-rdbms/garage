@@ -1,11 +1,13 @@
 {
+	"commentStamp" : "TudorGirba 3/3/2014 07:29",
+	"super" : "GAActiveObject",
 	"category" : "Garage-Postgres-Protocol",
-	"classinstvars" : [
-		 ],
+	"classinstvars" : [ ],
+	"pools" : [ ],
 	"classvars" : [
 		"DefaultConnectionArgs",
-		"DefaultTraceLevel" ],
-	"commentStamp" : "TudorGirba 3/3/2014 07:29",
+		"DefaultTraceLevel"
+	],
 	"instvars" : [
 		"socket",
 		"readBuffer",
@@ -23,9 +25,8 @@
 		"notificationSubscribers",
 		"fieldConverters",
 		"sqlStringConverter",
-		"receivingTextConverter" ],
+		"receivingTextConverter"
+	],
 	"name" : "GAConnection",
-	"pools" : [
-		 ],
-	"super" : "GAActiveObject",
-	"type" : "normal" }
+	"type" : "normal"
+}

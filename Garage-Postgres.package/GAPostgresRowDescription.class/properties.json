@@ -1,17 +1,16 @@
 {
-	"category" : "Garage-Postgres-Protocol",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "GAPacket",
+	"category" : "Garage-Postgres-Protocol",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"resultSet",
 		"numberOfColumns",
 		"columnDescriptions",
-		"columnDescriptionDictionary" ],
+		"columnDescriptionDictionary"
+	],
 	"name" : "GAPostgresRowDescription",
-	"pools" : [
-		 ],
-	"super" : "GAPacket",
-	"type" : "normal" }
+	"type" : "normal"
+}

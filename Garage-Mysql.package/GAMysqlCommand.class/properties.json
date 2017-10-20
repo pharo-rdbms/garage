@@ -1,15 +1,14 @@
 {
-	"category" : "Garage-Mysql-Protocol",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "GAMysqlPacket",
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"command",
-		"arg" ],
+		"arg"
+	],
 	"name" : "GAMysqlCommand",
-	"pools" : [
-		 ],
-	"super" : "GAMysqlPacket",
-	"type" : "normal" }
+	"type" : "normal"
+}

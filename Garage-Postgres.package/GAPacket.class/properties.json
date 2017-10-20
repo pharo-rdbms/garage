@@ -1,14 +1,13 @@
 {
-	"category" : "Garage-Postgres-Protocol",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		"PacketClasses" ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "GAPacket",
-	"pools" : [
-		 ],
 	"super" : "Object",
-	"type" : "normal" }
+	"category" : "Garage-Postgres-Protocol",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"PacketClasses"
+	],
+	"instvars" : [ ],
+	"name" : "GAPacket",
+	"type" : "normal"
+}

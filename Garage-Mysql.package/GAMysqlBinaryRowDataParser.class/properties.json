@@ -1,14 +1,13 @@
 {
-	"category" : "Garage-Mysql-Protocol",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"nullBitMap" ],
-	"name" : "GAMysqlBinaryRowDataParser",
-	"pools" : [
-		 ],
 	"super" : "GAMysqlRowDataParser",
-	"type" : "normal" }
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nullBitMap"
+	],
+	"name" : "GAMysqlBinaryRowDataParser",
+	"type" : "normal"
+}

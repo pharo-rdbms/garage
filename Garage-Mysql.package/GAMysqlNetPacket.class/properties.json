@@ -1,16 +1,17 @@
 {
-	"category" : "Garage-Mysql-Protocol",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		"MaxPacketLength" ],
 	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"MaxPacketLength"
+	],
 	"instvars" : [
 		"length",
 		"number",
-		"data" ],
+		"data"
+	],
 	"name" : "GAMysqlNetPacket",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

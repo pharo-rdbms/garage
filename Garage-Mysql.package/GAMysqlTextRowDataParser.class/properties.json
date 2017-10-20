@@ -1,14 +1,11 @@
 {
-	"category" : "Garage-Mysql-Protocol",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "GAMysqlTextRowDataParser",
-	"pools" : [
-		 ],
 	"super" : "GAMysqlRowDataParser",
-	"type" : "normal" }
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GAMysqlTextRowDataParser",
+	"type" : "normal"
+}

@@ -1,14 +1,11 @@
 {
-	"category" : "Garage-Postgres-Protocol",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "GACopyOutResponse",
-	"pools" : [
-		 ],
 	"super" : "GAPacket",
-	"type" : "normal" }
+	"category" : "Garage-Postgres-Protocol",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GACopyOutResponse",
+	"type" : "normal"
+}

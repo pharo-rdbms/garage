@@ -1,16 +1,15 @@
 {
-	"category" : "Garage-Mysql-Protocol",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "GAMysqlCommandBase",
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"dataBytes",
 		"statementId",
-		"paramNum" ],
+		"paramNum"
+	],
 	"name" : "GAMysqlCommandSendLongData",
-	"pools" : [
-		 ],
-	"super" : "GAMysqlCommandBase",
-	"type" : "normal" }
+	"type" : "normal"
+}

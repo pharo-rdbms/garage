@@ -1,14 +1,13 @@
 {
-	"category" : "Garage-Postgres-Protocol",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"password" ],
-	"name" : "GAPasswordPacket",
-	"pools" : [
-		 ],
 	"super" : "GAPacket",
-	"type" : "normal" }
+	"category" : "Garage-Postgres-Protocol",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"password"
+	],
+	"name" : "GAPasswordPacket",
+	"type" : "normal"
+}

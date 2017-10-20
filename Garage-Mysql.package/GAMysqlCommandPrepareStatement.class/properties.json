@@ -1,14 +1,13 @@
 {
-	"category" : "Garage-Mysql-Protocol",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"query" ],
-	"name" : "GAMysqlCommandPrepareStatement",
-	"pools" : [
-		 ],
 	"super" : "GAMysqlCommandBase",
-	"type" : "normal" }
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"query"
+	],
+	"name" : "GAMysqlCommandPrepareStatement",
+	"type" : "normal"
+}

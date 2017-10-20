@@ -1,7 +1,9 @@
 {
+	"commentStamp" : "",
+	"super" : "Object",
 	"category" : "Garage-Mysql-Protocol",
-	"classinstvars" : [
-		 ],
+	"classinstvars" : [ ],
+	"pools" : [ ],
 	"classvars" : [
 		"CapCompress",
 		"CapConnectWithDb",
@@ -20,13 +22,12 @@
 		"CapReserved",
 		"CapSecureConnection",
 		"CapSsl",
-		"CapTransactions" ],
-	"commentStamp" : "",
+		"CapTransactions"
+	],
 	"instvars" : [
 		"inStream",
-		"discriminator" ],
+		"discriminator"
+	],
 	"name" : "GAMysqlPacket",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

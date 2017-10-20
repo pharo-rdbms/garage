@@ -1,14 +1,11 @@
 {
-	"category" : "Garage-Mysql-Errors",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "GAMysqlDriverError",
-	"pools" : [
-		 ],
 	"super" : "Error",
-	"type" : "normal" }
+	"category" : "Garage-Mysql-Errors",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GAMysqlDriverError",
+	"type" : "normal"
+}

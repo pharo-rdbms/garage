@@ -1,10 +1,10 @@
 {
-	"category" : "Garage-Mysql-Protocol",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "GAMysqlPacket",
+	"category" : "Garage-Mysql-Protocol",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"protocolVer",
 		"serverVer",
@@ -13,9 +13,8 @@
 		"serverCap",
 		"serverLang",
 		"scrambleBuffMore",
-		"serverStatus" ],
+		"serverStatus"
+	],
 	"name" : "GAMysqlHandshake",
-	"pools" : [
-		 ],
-	"super" : "GAMysqlPacket",
-	"type" : "normal" }
+	"type" : "normal"
+}

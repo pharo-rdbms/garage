@@ -1,17 +1,16 @@
 {
-	"category" : "Garage-Postgres-Driver",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "GAResultSet",
+	"category" : "Garage-Postgres-Driver",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"result",
 		"completedResponse",
 		"rowDescription",
-		"rows" ],
+		"rows"
+	],
 	"name" : "GAPostgresResultSet",
-	"pools" : [
-		 ],
-	"super" : "GAResultSet",
-	"type" : "normal" }
+	"type" : "normal"
+}
