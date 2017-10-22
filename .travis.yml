@@ -44,9 +44,9 @@ before_install:
 
 install:
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
-        ln -s /usr/lib/libsqlite3.0.dylib libsqlite3
+        ln -s /usr/lib/libsqlite3.0.dylib libsqlite3;
     elif [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
-        ln -s /usr/lib/i386-linux-gnu/libsqlite3.so.0 libsqlite3
+        ln -s /usr/lib/i386-linux-gnu/libsqlite3.so.0 libsqlite3;
     fi;
   - wget -O - get.pharo.org/${PHARO_VERSION}+vm | bash
   - ./scripts/install-packages.sh $DB
