@@ -1,6 +1,7 @@
 tests
 testNotify1
 
+	SystemVersion current major >= 7 ifTrue: [ self timeLimit: 1 minute ].
 	notificationSubscriberCount := 1.
 
 	[
