@@ -37,7 +37,7 @@ You can also load a specific driver adding this snippet to your baseline:
 		baseline: 'Garage'
 		with: [ spec
 				loads: 'postgresV2';
-				repository: 'gitlab://pharo-rdbms/garage' ]
+				repository: 'github://pharo-rdbms/garage' ]
 ```
 
 Possible drivers been:
