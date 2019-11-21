@@ -1,4 +1,0 @@
-testing
-hasMoreRowsInServer
-	
-	^ finished not

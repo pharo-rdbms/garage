@@ -1,4 +1,0 @@
-accessing
-generatedKey
-
-	^ generatedKey

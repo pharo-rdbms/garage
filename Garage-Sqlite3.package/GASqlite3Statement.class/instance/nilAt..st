@@ -1,3 +1,0 @@
-public
-nilAt: aColumn
-	^ nil

@@ -1,4 +1,0 @@
-tests
-newFixture
-	
-	^ GADriverMysqlTestFixture new

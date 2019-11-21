@@ -1,4 +1,0 @@
-accessing
-encoding
-
-	self subclassResponsibility

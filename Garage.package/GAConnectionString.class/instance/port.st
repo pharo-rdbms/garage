@@ -1,4 +1,0 @@
-accessing
-port
-	
-	^ connectionString port

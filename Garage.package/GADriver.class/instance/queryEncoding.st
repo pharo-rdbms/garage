@@ -1,3 +1,0 @@
-encoding
-queryEncoding
-	^ self encoding

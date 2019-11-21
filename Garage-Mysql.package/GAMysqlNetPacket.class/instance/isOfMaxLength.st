@@ -1,3 +1,0 @@
-testing
-isOfMaxLength
-	^ length = MaxPacketLength

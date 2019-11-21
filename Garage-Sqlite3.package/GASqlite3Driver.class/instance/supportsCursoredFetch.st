@@ -1,4 +1,0 @@
-testing
-supportsCursoredFetch
-	
-	^ false

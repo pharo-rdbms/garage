@@ -1,4 +1,0 @@
-cursor
-hasOpenCursor
-
-	^ fieldsEof hasOpenCursor

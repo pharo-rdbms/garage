@@ -1,4 +1,0 @@
-testing
-isEmpty
-	
-	^ rows isEmpty
