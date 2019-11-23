@@ -9,7 +9,7 @@ Class {
 	#classVars : [
 		'MaxPacketLength'
 	],
-	#category : 'Garage-Mysql-Protocol'
+	#category : #'Garage-Mysql-Protocol'
 }
 
 { #category : #'as yet unclassified' }
@@ -73,16 +73,16 @@ GAMysqlNetPacket >> readFrom: aStream [
 
 { #category : #writing }
 GAMysqlNetPacket >> writeTo: aStream [
-	length = data size ifFalse: [self error: 'Mismatch between packet length and data size'].
-
-	aStream 
-		nextPut: (length digitAt: 1);
-		nextPut: (length digitAt: 2);
-		nextPut: (length digitAt: 3).
-		
-	aStream nextPut: (number digitAt: 1)	.
-	
-	(aStream respondsTo: #nextPutAllFlush:)  "socket streams respond to this"
-		ifTrue: [aStream nextPutAllFlush: data] "this one avoids some data copy"
-		ifFalse: [aStream nextPutAll: data; flush]
+	length = data size
+		ifFalse: [ self error: 'Mismatch between packet length and data size' ].
+	aStream
+		nextPut: (length byteAt: 1);
+		nextPut: (length byteAt: 2);
+		nextPut: (length byteAt: 3).
+	aStream nextPut: (number byteAt: 1).
+	(aStream respondsTo: #nextPutAllFlush:)
+		ifTrue: [ "this one avoids some data copy" aStream nextPutAllFlush: data ]
+		ifFalse: [ aStream
+				nextPutAll: data;
+				flush ]	"socket streams respond to this"
 ]

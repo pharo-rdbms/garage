@@ -10,7 +10,7 @@ Class {
 		'netSession',
 		'handshakeInfo'
 	],
-	#category : 'Garage-Mysql-Driver'
+	#category : #'Garage-Mysql-Driver'
 }
 
 { #category : #drivers }
@@ -145,6 +145,11 @@ GAMysqlDriver >> close [
 	(GAMysqlCommandQuit  onSession: netSession driver: self) execute.
 	netSession disconnect.
 	
+]
+
+{ #category : #schema }
+GAMysqlDriver >> columnsForTable: aTableName [
+	^self execute: 'SELECT COLUMN_NAME, COLUMN_DEFAULT, IS_NULLABLE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, NUMERIC_PRECISION, NUMERIC_SCALE, COLUMN_KEY FROM information_schema.columns WHERE TABLE_SCHEMA = ',(self database printString), ' AND TABLE_NAME = ',(aTableName printString)
 ]
 
 { #category : #transaction }
@@ -338,6 +343,11 @@ GAMysqlDriver >> supportsPreparedStatements [
 GAMysqlDriver >> supportsRetrievingGeneratedKeys [
 
 	^ true
+]
+
+{ #category : #schema }
+GAMysqlDriver >> tables [ 
+		^(self execute: ('SELECT TABLE_NAME, ENGINE, AUTO_INCREMENT FROM information_schema.tables WHERE TABLE_SCHEMA = ',(self database printString))) collect: [ :ea | ea first ]
 ]
 
 { #category : #accessing }

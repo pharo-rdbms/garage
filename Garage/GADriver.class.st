@@ -15,7 +15,7 @@ Class {
 	#classVars : [
 		'Drivers'
 	],
-	#category : 'Garage-Driver'
+	#category : #'Garage-Driver'
 }
 
 { #category : #accessing }
@@ -122,6 +122,11 @@ GADriver >> close [
 	self subclassResponsibility
 ]
 
+{ #category : #schema }
+GADriver >> columnsForTable: aTableName [
+	self subclassResponsibility 
+]
+
 { #category : #transactions }
 GADriver >> commitTransaction [
 
@@ -145,20 +150,6 @@ GADriver >> connectionString [
 GADriver >> connectionString: aGAConnectionString [ 
 
 	connectionString := aGAConnectionString
-]
-
-{ #category : #statement }
-GADriver >> createStatement [
-	
-	"Creates an empty statement object"
-	self subclassResponsibility
-]
-
-{ #category : #statement }
-GADriver >> createStatement: aSQLString [
-	
-	"Creates a statement object from a sql query"
-	self subclassResponsibility
 ]
 
 { #category : #transactions }
@@ -256,9 +247,9 @@ GADriver >> optionAt: aString [
 ]
 
 { #category : #statement }
-GADriver >> prepare: aQuery [
-
-	"Creates a statement object from a sql query and sends it for its preparation to the database server"
+GADriver >> prepare: aSQLString [
+	
+	"Creates a statement object from a sql query"
 	self subclassResponsibility
 ]
 
@@ -318,6 +309,11 @@ GADriver >> supportsRetrievingGeneratedKeys [
 
 	"Tests if the current database driver supports retrieving auto generated keys/ids without an extra query"
 	^ false
+]
+
+{ #category : #schema }
+GADriver >> tables [
+	self subclassResponsibility 
 ]
 
 { #category : #finalization }

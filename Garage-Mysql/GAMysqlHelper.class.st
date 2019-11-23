@@ -6,7 +6,7 @@ Class {
 		'maxValue',
 		'seedTwo'
 	],
-	#category : 'Garage-Mysql-Protocol'
+	#category : #'Garage-Mysql-Protocol'
 }
 
 { #category : #'as yet unclassified' }
@@ -71,27 +71,25 @@ GAMysqlHelper class >> decodeLcsFrom: aStream [
 ]
 
 { #category : #'as yet unclassified' }
-GAMysqlHelper class >> encodeLcb: value on: aStream [ 
-	value < -1 ifTrue: 
-		[ self error: 'Can not encode value' , value asString , ' to length coded binary' ].
-	value = -1 ifTrue: 
-		[ "represents null column value"
-		^ aStream nextPut: 251 ].
-	(value 
-		between: 0
-		and: 250) ifTrue: [ ^ aStream nextPut: (value digitAt: 1) ].
-	value <= 65535 ifTrue: 
-		[ ^ aStream
-			nextPut: 252;
-			nextPut: (value digitAt: 1);
-			nextPut: (value digitAt: 2) ].
-	value <= 16777215 ifTrue: 
-		[ ^ aStream
-			nextPut: 253;
-			nextPut: (value digitAt: 1);
-			nextPut: (value digitAt: 2);
-			nextPut: (value digitAt: 3)
-			yourself].
+GAMysqlHelper class >> encodeLcb: value on: aStream [
+	value < -1
+		ifTrue: [ self
+				error: 'Can not encode value' , value asString , ' to length coded binary' ].
+	value = -1
+		ifTrue: [ "represents null column value" ^ aStream nextPut: 251 ].
+	(value between: 0 and: 250)
+		ifTrue: [ ^ aStream nextPut: (value byteAt: 1) ].
+	value <= 65535
+		ifTrue: [ ^ aStream
+				nextPut: 252;
+				nextPut: (value digitAt: 1);
+				nextPut: (value digitAt: 2) ].
+	value <= 16777215
+		ifTrue: [ ^ aStream
+				nextPut: 253;
+				nextPut: (value digitAt: 1);
+				nextPut: (value digitAt: 2);
+				nextPut: (value digitAt: 3) yourself ].
 	^ aStream
 		nextPut: 254;
 		nextPut: (value digitAt: 1);

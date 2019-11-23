@@ -11,7 +11,7 @@ Class {
 		'serverCaps',
 		'scrambleBuffMore'
 	],
-	#category : 'Garage-Mysql-Protocol'
+	#category : #'Garage-Mysql-Protocol'
 }
 
 { #category : #'as yet unclassified' }
@@ -62,36 +62,29 @@ GAMysqlClientAuth >> write [
 	flags := serverCaps bitAnd: clientCaps.
 	flags := flags bitOr: CapMultiStatements + CapMultiResults.
 	buffStream
-		nextPut: (flags digitAt: 1);
-		nextPut: (flags digitAt: 2);
-		nextPut: (flags digitAt: 3);
-		nextPut: (flags digitAt: 4).
+		nextPut: (flags byteAt: 1);
+		nextPut: (flags byteAt: 2);
+		nextPut: (flags byteAt: 3);
+		nextPut: (flags byteAt: 4).
 	maxNetPacketLength := self class maxNetPacketLength.
 	buffStream
-		nextPut: (maxNetPacketLength digitAt: 1);
-		nextPut: (maxNetPacketLength digitAt: 2);
-		nextPut: (maxNetPacketLength digitAt: 3);
-		nextPut: (maxNetPacketLength digitAt: 4).
-	buffStream nextPut: (charset digitAt: 1).
-	buffStream nextPutAll: (ByteArray 
-			new: 23
-			withAll: 0).	"filler"
+		nextPut: (maxNetPacketLength byteAt: 1);
+		nextPut: (maxNetPacketLength byteAt: 2);
+		nextPut: (maxNetPacketLength byteAt: 3);
+		nextPut: (maxNetPacketLength byteAt: 4).
+	buffStream nextPut: (charset byteAt: 1).
+	buffStream nextPutAll: (ByteArray new: 23 withAll: 0).	"filler"
 	buffStream nextPutAll: user asByteArray.
 	buffStream nextPut: 0.	"null terminated"
-	scrmbl := password isEmptyOrNil 
+	scrmbl := password isEmptyOrNil
 		ifTrue: [ '' asByteArray ]
-		ifFalse: 
-			[ GAMysqlHelper 
+		ifFalse: [ GAMysqlHelper
 				secureScramble: scrambleBuff , scrambleBuffMore
 				with: password ].
-	self 
-		encodeLcs: scrmbl
-		on: buffStream.
-	
-	((flags bitAnd: CapConnectWithDb) = CapConnectWithDb) ifTrue: [
-		database isEmptyOrNil not ifTrue: [
-			buffStream nextPutAll: database asByteArray].
-		buffStream nextPut: 0	"null terminated" ].
-	
+	self encodeLcs: scrmbl on: buffStream.
+	(flags bitAnd: CapConnectWithDb) = CapConnectWithDb
+		ifTrue: [ database isEmptyOrNil not
+				ifTrue: [ buffStream nextPutAll: database asByteArray ].
+			buffStream nextPut: 0	"null terminated" ].
 	^ buffStream contents
 ]
