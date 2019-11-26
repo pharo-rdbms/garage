@@ -10,6 +10,7 @@ Class {
 	#superclass : #Object,
 	#instVars : [
 		'connectionString',
+		'implementation',
 		'encoding'
 	],
 	#classVars : [
@@ -55,7 +56,8 @@ GADriver class >> driverManager [
 GADriver class >> fromConnectionString: string [
 	
 	| connectionString |
-	string isString ifTrue: [connectionString := GAConnectionString fromString: string]
+	string isString 
+		ifTrue: [connectionString := GAConnectionString fromString: string]
 		ifFalse: [ connectionString := string ].
 	^ (self driverAt: connectionString driverId) fromConnectionString: connectionString
 ]
@@ -160,6 +162,13 @@ GADriver >> defaultValueAutoCommit [
 	self subclassResponsibility
 ]
 
+{ #category : #'reflective operations' }
+GADriver >> doesNotUnderstand: aMessage [
+	^(implementation respondsTo: aMessage selector) 
+		ifTrue: [ aMessage sendTo: implementation ]
+		ifFalse: [ super doesNotUnderstand: aMessage ]
+]
+
 { #category : #accessing }
 GADriver >> driverId [
 
@@ -237,6 +246,11 @@ GADriver >> notBoundArgumentsFail [
 GADriver >> numberOfFetchesForSingleExecute [
 	"Returns the number of roundtrips a database driver does for a single execute command"
 	^ 1
+]
+
+{ #category : #accessing }
+GADriver >> on: aDatabaseConnection [
+	implementation := aDatabaseConnection
 ]
 
 { #category : #options }

@@ -1,9 +1,6 @@
 Class {
 	#name : #GASqlite3Driver,
 	#superclass : #GADriver,
-	#instVars : [
-		'connection'
-	],
 	#category : #'Garage-Sqlite3-Driver'
 }
 
@@ -18,7 +15,9 @@ GASqlite3Driver class >> fromConnectionString: aConnectionString [
 
 	^ self new
 		connectionString: aConnectionString;
-		connection: (SQLite3Connection on:(aConnectionString host = 'memory' ifTrue: [ ':memory:' ] ifFalse: [ (aConnectionString databasePath) urlDecoded ]));
+		on: (SQLite3Connection on:(aConnectionString host = 'memory' 
+			ifTrue: [ ':memory:' ] 
+			ifFalse: [ (aConnectionString databasePath) urlDecoded ]));
 		yourself
 ]
 
@@ -49,48 +48,42 @@ GASqlite3Driver >> backend [
 { #category : #public }
 GASqlite3Driver >> basicExecute: anSQLText [
 
-	^ connection basicExecute: anSQLText
+	^ implementation basicExecute: anSQLText
 ]
 
 { #category : #transactions }
 GASqlite3Driver >> beginTransaction [
 
-	^ connection beginTransaction
+	^ implementation beginTransaction
 ]
 
 { #category : #connection }
 GASqlite3Driver >> close [
 
-	^connection close
+	^implementation close
 ]
 
 { #category : #schema }
 GASqlite3Driver >> columnsForTable: aTableName [
-	^connection columnNamesFor: aTableName
+	^implementation columnNamesFor: aTableName
 ]
 
 { #category : #transactions }
 GASqlite3Driver >> commitTransaction [
 
-	^ connection commitTransaction
+	^ implementation commitTransaction
 ]
 
 { #category : #connection }
 GASqlite3Driver >> connect [
 	
-	^connection open
-]
-
-{ #category : #accessing }
-GASqlite3Driver >> connection: aSQLite3Connection [
-	
-	connection := aSQLite3Connection
+	^implementation open
 ]
 
 { #category : #accessing }
 GASqlite3Driver >> database [
 
-	^connection filename
+	^implementation filename
 ]
 
 { #category : #transactions }
@@ -102,31 +95,31 @@ GASqlite3Driver >> defaultValueAutoCommit [
 { #category : #query }
 GASqlite3Driver >> execute: aQuery [
 
-	^ connection execute: aQuery
+	^ self execute: aQuery with: #()
 ]
 
 { #category : #query }
 GASqlite3Driver >> execute: aQuery with: anArray [
 
-	^ connection execute: aQuery with: anArray
+	^ GASqlite3ResultSet on:(implementation execute: aQuery with: anArray)
 ]
 
 { #category : #finalization }
 GASqlite3Driver >> finalize [
 
-	connection isOpen ifTrue: [connection close].
+	implementation isOpen ifTrue: [implementation close].
 ]
 
 { #category : #transactions }
 GASqlite3Driver >> hasAutoCommit [
 	
-	^ connection getAutoCommit
+	^ implementation getAutoCommit
 ]
 
 { #category : #testing }
 GASqlite3Driver >> isConnected [
 
-	^ connection isNotNil and: [ connection isOpen ]
+	^ implementation isNotNil and: [ implementation isOpen ]
 ]
 
 { #category : #testing }
@@ -150,13 +143,13 @@ GASqlite3Driver >> notBoundArgumentsFail [
 { #category : #query }
 GASqlite3Driver >> prepare: aString [ 
 	
-	^connection prepare: aString
+	^implementation prepare: aString
 ]
 
 { #category : #transactions }
 GASqlite3Driver >> rollbackTransaction [
 
-	^ connection rollbackTransaction
+	^ implementation rollbackTransaction
 ]
 
 { #category : #testing }
@@ -185,5 +178,5 @@ GASqlite3Driver >> supportsRetrievingGeneratedKeys [
 
 { #category : #schema }
 GASqlite3Driver >> tables [
-	^connection tableNames
+	^implementation tableNames
 ]

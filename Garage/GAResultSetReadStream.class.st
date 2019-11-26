@@ -5,10 +5,10 @@ Class {
 	#name : #GAResultSetReadStream,
 	#superclass : #Object,
 	#instVars : [
-		'resultSet',
+		'implementation',
 		'position'
 	],
-	#category : 'Garage-Driver'
+	#category : #'Garage-Driver'
 }
 
 { #category : #'instance creation' }
@@ -23,8 +23,14 @@ GAResultSetReadStream class >> on: aResultSet [
 GAResultSetReadStream >> currentRow [
 	
 	"Gets the current row of the stream"
-	self flag: #possibleBug.
-	^ [ resultSet rowAt: position ] on: SubscriptOutOfBounds do: [ nil ]
+	^ [ implementation rows at: position ] on: SubscriptOutOfBounds do: [ nil ]
+]
+
+{ #category : #'reflective operations' }
+GAResultSetReadStream >> doesNotUnderstand: aMessage [
+	^(implementation respondsTo: aMessage selector) 
+		ifTrue: [ aMessage sendTo: implementation ]
+		ifFalse: [ super doesNotUnderstand: aMessage ]
 ]
 
 { #category : #'initialization-release' }
@@ -55,5 +61,5 @@ GAResultSetReadStream >> next: anInteger [
 { #category : #'initialization-release' }
 GAResultSetReadStream >> on: aResultSet [ 
 
-	resultSet := aResultSet
+	implementation := aResultSet
 ]

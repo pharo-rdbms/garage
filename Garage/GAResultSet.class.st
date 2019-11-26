@@ -4,7 +4,10 @@ I am a garage result set representing a result from a database query. I provide 
 Class {
 	#name : #GAResultSet,
 	#superclass : #Object,
-	#category : 'Garage-Driver'
+	#instVars : [
+		'implementation'
+	],
+	#category : #'Garage-Driver'
 }
 
 { #category : #testing }
@@ -17,18 +20,24 @@ GAResultSet >> at: anIndex [
 { #category : #iterating }
 GAResultSet >> collect: aBlockClosure [ 
 	
-	"A collect on the rows of the result set."
-	^ self subclassResponsibility
+	^self subclassResponsibility 
 ]
 
 { #category : #iterating }
 GAResultSet >> do: aBlockClosure [ 
 	
 	"A do on the rows of the result set."
-	^ self subclassResponsibility
+	^ self subclassResponsibility 
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #'reflective operations' }
+GAResultSet >> doesNotUnderstand: aMessage [
+	^(implementation respondsTo: aMessage selector) 
+		ifTrue: [ aMessage sendTo: implementation ]
+		ifFalse: [ super doesNotUnderstand: aMessage ]
+]
+
+{ #category : #iterating }
 GAResultSet >> first [
 	
 	"returns the first row of the result set"
@@ -46,6 +55,11 @@ GAResultSet >> isEmpty [
 GAResultSet >> isResultSet [
 
 	^ true
+]
+
+{ #category : #acccessing }
+GAResultSet >> on: aResultSet [ 
+	implementation := aResultSet
 ]
 
 { #category : #streaming }
