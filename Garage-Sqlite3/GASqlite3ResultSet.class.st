@@ -32,7 +32,7 @@ GASqlite3ResultSet >> do: aBlockClosure [
 	^ self rows do: aBlockClosure 
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #iterating }
 GASqlite3ResultSet >> first [
 	
 	"returns the first row of the result set"
