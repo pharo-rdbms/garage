@@ -1,5 +1,5 @@
 Class {
-	#name : #GASqlite3ResultSet,
+	#name : #GASQLite3ResultSet,
 	#superclass : #GAResultSet,
 	#instVars : [
 		'rows'
@@ -8,63 +8,63 @@ Class {
 }
 
 { #category : #'instance creation' }
-GASqlite3ResultSet class >> on: aSQLite3Cursor [
+GASQLite3ResultSet class >> on: aSQLite3Cursor [
 	^self new on: aSQLite3Cursor 
 ]
 
 { #category : #testing }
-GASqlite3ResultSet >> at: anIndex [
+GASQLite3ResultSet >> at: anIndex [
 	
 	"Accesses the nth row of the result set"
 	self rows at: anIndex
 ]
 
 { #category : #iterating }
-GASqlite3ResultSet >> collect: aBlockClosure [ 
+GASQLite3ResultSet >> collect: aBlockClosure [ 
 	
 	^self rows collect: aBlockClosure 
 ]
 
 { #category : #iterating }
-GASqlite3ResultSet >> do: aBlockClosure [ 
+GASQLite3ResultSet >> do: aBlockClosure [ 
 	
 	"A do on the rows of the result set."
 	^ self rows do: aBlockClosure 
 ]
 
 { #category : #iterating }
-GASqlite3ResultSet >> first [
+GASQLite3ResultSet >> first [
 	
 	"returns the first row of the result set"
 	^ self rows first
 ]
 
 { #category : #testing }
-GASqlite3ResultSet >> isEmpty [
+GASQLite3ResultSet >> isEmpty [
 	
 	"Returns if the result set has no rows"
 	^self rows isEmpty
 ]
 
 { #category : #acccessing }
-GASqlite3ResultSet >> on: anImplementation [
+GASQLite3ResultSet >> on: anImplementation [
 	super on: anImplementation.
 	anImplementation rowClass: GARow
 ]
 
 { #category : #streaming }
-GASqlite3ResultSet >> readStream [
+GASQLite3ResultSet >> readStream [
 	
 	^ GAResultSetReadStream on: self
 ]
 
 { #category : #acccessing }
-GASqlite3ResultSet >> rows [ 
+GASQLite3ResultSet >> rows [ 
 	^rows ifNil: [ rows := implementation rows ]
 ]
 
 { #category : #iterating }
-GASqlite3ResultSet >> select: aBlockClosure [ 
+GASQLite3ResultSet >> select: aBlockClosure [ 
 	
 	"A select on the rows of the result set."
 	^ self rows select: aBlockClosure
