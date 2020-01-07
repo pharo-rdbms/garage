@@ -1,11 +1,11 @@
 Class {
-	#name : #GASqliteConnectionStringTest,
+	#name : #GASQLiteConnectionStringTest,
 	#superclass : #TestCase,
 	#category : 'Garage-SQLite3-Tests'
 }
 
 { #category : #tests }
-GASqliteConnectionStringTest >> testConnectionCreatesFileDatabase [
+GASQLiteConnectionStringTest >> testConnectionCreatesFileDatabase [
 
 	| connectionString driver dbFile |
 	
@@ -22,7 +22,7 @@ GASqliteConnectionStringTest >> testConnectionCreatesFileDatabase [
 ]
 
 { #category : #tests }
-GASqliteConnectionStringTest >> testMemoryDatabase [
+GASQLiteConnectionStringTest >> testMemoryDatabase [
 
 	| driver |
 	driver := GASQLite3Driver fromConnectionString: (GAConnectionString fromString: 'sqlite3://memory').
@@ -33,7 +33,7 @@ GASqliteConnectionStringTest >> testMemoryDatabase [
 ]
 
 { #category : #tests }
-GASqliteConnectionStringTest >> testUnixLikeConnectionString [
+GASQLiteConnectionStringTest >> testUnixLikeConnectionString [
 
 	| connectionString driver |
 	connectionString := GAConnectionString new
@@ -46,7 +46,7 @@ GASqliteConnectionStringTest >> testUnixLikeConnectionString [
 ]
 
 { #category : #tests }
-GASqliteConnectionStringTest >> testWindowsLikeConnectionString [
+GASQLiteConnectionStringTest >> testWindowsLikeConnectionString [
 
 	| connectionString driver |
 	connectionString := GAConnectionString new

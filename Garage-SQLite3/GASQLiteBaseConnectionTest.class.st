@@ -4,7 +4,7 @@ I am a copy of class SQLiteBaseConnectionTest. This comment is copied from there
 Unit tests for SQLiteBaseConnection
 "
 Class {
-	#name : #GASqliteBaseConnectionTest,
+	#name : #GASQLiteBaseConnectionTest,
 	#superclass : #TestCase,
 	#instVars : [
 		'db',
@@ -14,7 +14,7 @@ Class {
 }
 
 { #category : #'tests - DEACTIVATED' }
-GASqliteBaseConnectionTest >> deactivatedTestTracing [
+GASQLiteBaseConnectionTest >> deactivatedTestTracing [
 	| sql callback expected actual  |
 	
 	(SystemVersion current major >= 7) ifTrue: [ self skip ].
@@ -53,14 +53,14 @@ GASqliteBaseConnectionTest >> deactivatedTestTracing [
 ]
 
 { #category : #tests }
-GASqliteBaseConnectionTest >> invalidFileNameOnCurrentOperatingSystem [
+GASQLiteBaseConnectionTest >> invalidFileNameOnCurrentOperatingSystem [
 	^Smalltalk os isWindows
 		ifTrue: [ '/&*no' ]
 		ifFalse: [ '/nosuchfile' ]
 ]
 
 { #category : #tests }
-GASqliteBaseConnectionTest >> noTestColumnNamesBobbyGo [
+GASQLiteBaseConnectionTest >> noTestColumnNamesBobbyGo [
 	"In this test, Bobby Tables strikes naive SQL string construction."
 	"20190302, pierce: #basicExecute: uses prepare/step/finalize internally and is no longer susceptible to injection attacks. "
 	| tables bobby |
@@ -87,7 +87,7 @@ GASqliteBaseConnectionTest >> noTestColumnNamesBobbyGo [
 ]
 
 { #category : #running }
-GASqliteBaseConnectionTest >> setUp [ 
+GASQLiteBaseConnectionTest >> setUp [ 
 
 	super setUp.
 	db := GADriver fromConnectionString: 'sqlite3://memory'.
@@ -96,7 +96,7 @@ GASqliteBaseConnectionTest >> setUp [
 ]
 
 { #category : #running }
-GASqliteBaseConnectionTest >> tearDown [
+GASQLiteBaseConnectionTest >> tearDown [
 	
 	[ db close ] on: SQLite3Misuse do: [ ].
 	super tearDown.
@@ -104,7 +104,7 @@ GASqliteBaseConnectionTest >> tearDown [
 ]
 
 { #category : #'tests - connections' }
-GASqliteBaseConnectionTest >> testBadOpen [
+GASQLiteBaseConnectionTest >> testBadOpen [
 	| newConnection |
 	newConnection := SQLite3BaseConnection
 		on: self invalidFileNameOnCurrentOperatingSystem.
@@ -113,7 +113,7 @@ GASqliteBaseConnectionTest >> testBadOpen [
 ]
 
 { #category : #'tests - execution' }
-GASqliteBaseConnectionTest >> testBasicExecuteOk [
+GASQLiteBaseConnectionTest >> testBasicExecuteOk [
 
 	res := db basicExecute: 'create table x (xk integer, xv integer);'.
 	self assert: res equals: 0.
@@ -123,7 +123,7 @@ GASqliteBaseConnectionTest >> testBasicExecuteOk [
 ]
 
 { #category : #'tests - execution' }
-GASqliteBaseConnectionTest >> testBasicExecuteSyntaxError [
+GASQLiteBaseConnectionTest >> testBasicExecuteSyntaxError [
 
 	self should: [ db basicExecute: 'create table,;' ]
 		raise: SQLite3AbstractError
@@ -131,7 +131,7 @@ GASqliteBaseConnectionTest >> testBasicExecuteSyntaxError [
 ]
 
 { #category : #'tests - types' }
-GASqliteBaseConnectionTest >> testBooleanColumnTypeMismatch [
+GASQLiteBaseConnectionTest >> testBooleanColumnTypeMismatch [
 	| s | 
 	
 	res := db basicExecute: 'create table x (xk integer primary key, xv notboolean);'.
@@ -145,7 +145,7 @@ GASqliteBaseConnectionTest >> testBooleanColumnTypeMismatch [
 ]
 
 { #category : #'tests - types' }
-GASqliteBaseConnectionTest >> testBooleanObject [
+GASQLiteBaseConnectionTest >> testBooleanObject [
 	| s | 
 	
 	res := db basicExecute: 'create table x (xk integer primary key, xv boolean);'.
@@ -169,7 +169,7 @@ GASqliteBaseConnectionTest >> testBooleanObject [
 ]
 
 { #category : #'tests - writing' }
-GASqliteBaseConnectionTest >> testBooleanWriteIntegerOneThenRead [
+GASQLiteBaseConnectionTest >> testBooleanWriteIntegerOneThenRead [
 	| s | 
 	
 	res := db basicExecute: 'create table x (xk integer primary key, xv boolean);'.
@@ -192,7 +192,7 @@ GASqliteBaseConnectionTest >> testBooleanWriteIntegerOneThenRead [
 ]
 
 { #category : #'tests - writing' }
-GASqliteBaseConnectionTest >> testBooleanWriteIntegerTwoThenRead [
+GASQLiteBaseConnectionTest >> testBooleanWriteIntegerTwoThenRead [
 	| s | 
 	
 	res := db basicExecute: 'create table x (xk integer primary key, xv boolean);'.
@@ -213,7 +213,7 @@ GASqliteBaseConnectionTest >> testBooleanWriteIntegerTwoThenRead [
 ]
 
 { #category : #'tests - writing' }
-GASqliteBaseConnectionTest >> testBooleanWriteIntegerZeroThenRead [
+GASQLiteBaseConnectionTest >> testBooleanWriteIntegerZeroThenRead [
 	| s | 
 	
 	res := db basicExecute: 'create table x (xk integer primary key, xv boolean);'.
@@ -236,7 +236,7 @@ GASqliteBaseConnectionTest >> testBooleanWriteIntegerZeroThenRead [
 ]
 
 { #category : #'tests - writing' }
-GASqliteBaseConnectionTest >> testBooleanWriteNilThenRead [
+GASQLiteBaseConnectionTest >> testBooleanWriteNilThenRead [
 	| s | 
 	
 	res := db basicExecute: 'create table x (xk integer primary key, xv boolean);'.
@@ -259,7 +259,7 @@ GASqliteBaseConnectionTest >> testBooleanWriteNilThenRead [
 ]
 
 { #category : #'tests - writing' }
-GASqliteBaseConnectionTest >> testBooleanWriteSQLNullThenRead [
+GASQLiteBaseConnectionTest >> testBooleanWriteSQLNullThenRead [
 	| s | 
 	
 	res := db basicExecute: 'create table x (xk integer primary key, xv boolean);'.
@@ -281,7 +281,7 @@ GASqliteBaseConnectionTest >> testBooleanWriteSQLNullThenRead [
 ]
 
 { #category : #'tests - writing' }
-GASqliteBaseConnectionTest >> testBooleanWriteStringFalseThenRead [
+GASQLiteBaseConnectionTest >> testBooleanWriteStringFalseThenRead [
 	| s | 
 	
 	res := db basicExecute: 'create table x (xk integer primary key, xv boolean);'.
@@ -304,7 +304,7 @@ GASqliteBaseConnectionTest >> testBooleanWriteStringFalseThenRead [
 ]
 
 { #category : #'tests - writing' }
-GASqliteBaseConnectionTest >> testBooleanWriteStringTrueThenRead [
+GASQLiteBaseConnectionTest >> testBooleanWriteStringTrueThenRead [
 	| s | 
 	
 	res := db basicExecute: 'create table x (xk integer primary key, xv boolean);'.
@@ -327,7 +327,7 @@ GASqliteBaseConnectionTest >> testBooleanWriteStringTrueThenRead [
 ]
 
 { #category : #'tests - writing' }
-GASqliteBaseConnectionTest >> testBooleanWriteStringTwoThenRead [
+GASQLiteBaseConnectionTest >> testBooleanWriteStringTwoThenRead [
 	| s | 
 	
 	res := db basicExecute: 'create table x (xk integer primary key, xv boolean);'.
@@ -348,7 +348,7 @@ GASqliteBaseConnectionTest >> testBooleanWriteStringTwoThenRead [
 ]
 
 { #category : #'tests - writing' }
-GASqliteBaseConnectionTest >> testBooleanWriteThenRead [
+GASQLiteBaseConnectionTest >> testBooleanWriteThenRead [
 	| s | 
 	
 	res := db basicExecute: 'create table x (xk integer primary key, xv boolean);'.
@@ -371,7 +371,7 @@ GASqliteBaseConnectionTest >> testBooleanWriteThenRead [
 ]
 
 { #category : #'tests - columns' }
-GASqliteBaseConnectionTest >> testColumnNames [
+GASQLiteBaseConnectionTest >> testColumnNames [
 	| columns |
 	
 	res := db basicExecute: 'create table x (xk integer, xv integer);'.
@@ -385,7 +385,7 @@ GASqliteBaseConnectionTest >> testColumnNames [
 ]
 
 { #category : #'tests - columns' }
-GASqliteBaseConnectionTest >> testColumnNamesBobbyStop [
+GASQLiteBaseConnectionTest >> testColumnNamesBobbyStop [
 	"In this test, Bobby Tables strikes again, but fails, because #columnNamesFor: uses parameter binding."
 	| columns tables |
 	
@@ -409,7 +409,7 @@ GASqliteBaseConnectionTest >> testColumnNamesBobbyStop [
 ]
 
 { #category : #'tests - columns' }
-GASqliteBaseConnectionTest >> testColumnNamesNoSuchTable [
+GASQLiteBaseConnectionTest >> testColumnNamesNoSuchTable [
 	| columns |
 	
 	res := db basicExecute: 'create table x (xk integer, xv integer);'.
@@ -419,7 +419,7 @@ GASqliteBaseConnectionTest >> testColumnNamesNoSuchTable [
 ]
 
 { #category : #'tests - execution' }
-GASqliteBaseConnectionTest >> testDataValuesAvailable [
+GASQLiteBaseConnectionTest >> testDataValuesAvailable [
 	| s | 
 	
 	res := db basicExecute: 'create table x (xk integer primary key, iv integer, tv text);'.
@@ -435,7 +435,7 @@ GASqliteBaseConnectionTest >> testDataValuesAvailable [
 ]
 
 { #category : #'tests - types' }
-GASqliteBaseConnectionTest >> testDateAndTime [
+GASQLiteBaseConnectionTest >> testDateAndTime [
 	| data s | 
 	
 	data := DateAndTime year: 2015 month: 4 day: 1.
@@ -462,7 +462,7 @@ GASqliteBaseConnectionTest >> testDateAndTime [
 ]
 
 { #category : #'tests - columns' }
-GASqliteBaseConnectionTest >> testDeclaredColumnTypes [
+GASQLiteBaseConnectionTest >> testDeclaredColumnTypes [
 	| columns |
 	
 	res := db basicExecute: 'create table x (xk integer, xv blob, xb boolean);'.
@@ -475,7 +475,7 @@ GASqliteBaseConnectionTest >> testDeclaredColumnTypes [
 ]
 
 { #category : #'tests - multilingual' }
-GASqliteBaseConnectionTest >> testDefaultMultilingualStrings [
+GASQLiteBaseConnectionTest >> testDefaultMultilingualStrings [
 	| s | 
 	
 	res := db basicExecute: 'create table x (xk integer primary key, xm1 text default ''中文'', xm2 text default ''áěšřčá'');'.
@@ -497,7 +497,7 @@ GASqliteBaseConnectionTest >> testDefaultMultilingualStrings [
 ]
 
 { #category : #'tests - connections' }
-GASqliteBaseConnectionTest >> testDoubleClose [
+GASQLiteBaseConnectionTest >> testDoubleClose [
 	
 	db close.
 	[ db close ] on: SQLite3Misuse do: [ ]
@@ -505,7 +505,7 @@ GASqliteBaseConnectionTest >> testDoubleClose [
 ]
 
 { #category : #'tests - types' }
-GASqliteBaseConnectionTest >> testFloat [
+GASQLiteBaseConnectionTest >> testFloat [
 	| s |	
 	res := db basicExecute: 'create table x (xk integer primary key, xv real);'.
 	self assert: res equals: 0.
@@ -520,7 +520,7 @@ GASqliteBaseConnectionTest >> testFloat [
 ]
 
 { #category : #'tests - types' }
-GASqliteBaseConnectionTest >> testInteger [
+GASQLiteBaseConnectionTest >> testInteger [
 	"The large integer comes from Glorp's testInt8."
 	| s |	
 		
@@ -540,7 +540,7 @@ GASqliteBaseConnectionTest >> testInteger [
 ]
 
 { #category : #'tests - multilingual' }
-GASqliteBaseConnectionTest >> testMultilingualStrings [
+GASQLiteBaseConnectionTest >> testMultilingualStrings [
 	| data s idx | 
 	
 	data := OrderedCollection with: 'English' with: '中文' with: 'にほんご', 'áěšřčá'.
@@ -567,7 +567,7 @@ GASqliteBaseConnectionTest >> testMultilingualStrings [
 ]
 
 { #category : #'tests - multilingual' }
-GASqliteBaseConnectionTest >> testMultilingualTableName [
+GASQLiteBaseConnectionTest >> testMultilingualTableName [
 	| s | 
 	
 	res := db basicExecute: 'create table 表一 (xk integer primary key, xm1 text default ''中文'');'.
@@ -588,7 +588,7 @@ GASqliteBaseConnectionTest >> testMultilingualTableName [
 ]
 
 { #category : #'tests - types' }
-GASqliteBaseConnectionTest >> testObjectBlob [
+GASQLiteBaseConnectionTest >> testObjectBlob [
 	| data s | 
 	
 	data := OrderedCollection with: 1 with: 'two' with: 3.3.
@@ -616,7 +616,7 @@ GASqliteBaseConnectionTest >> testObjectBlob [
 ]
 
 { #category : #tests }
-GASqliteBaseConnectionTest >> testPrepareStep [
+GASQLiteBaseConnectionTest >> testPrepareStep [
 	| s i sql | 
 	
 	res := db basicExecute: 'create table x (xk integer primary key, iv integer, tv text);'.
@@ -646,7 +646,7 @@ GASqliteBaseConnectionTest >> testPrepareStep [
 ]
 
 { #category : #tests }
-GASqliteBaseConnectionTest >> testPrepareStepSelective [
+GASQLiteBaseConnectionTest >> testPrepareStepSelective [
 	| s i sql count | 
 	
 	res := db basicExecute: 'create table x (xk integer primary key, iv integer, tv text);'.
@@ -680,7 +680,7 @@ GASqliteBaseConnectionTest >> testPrepareStepSelective [
 ]
 
 { #category : #tests }
-GASqliteBaseConnectionTest >> testResultSetColumnIntrospection [
+GASQLiteBaseConnectionTest >> testResultSetColumnIntrospection [
 	| s | 
 
 	res := db basicExecute: 'create table x (xk integer primary key, iv integer, tv text);'.
@@ -701,7 +701,7 @@ GASqliteBaseConnectionTest >> testResultSetColumnIntrospection [
 ]
 
 { #category : #'tests - types' }
-GASqliteBaseConnectionTest >> testScaledDecimal [
+GASQLiteBaseConnectionTest >> testScaledDecimal [
 	"This test is a simplified version of GlorpNumericTest>>tesNumeric."
 	| s number float |
 	
@@ -724,7 +724,7 @@ GASqliteBaseConnectionTest >> testScaledDecimal [
 ]
 
 { #category : #'tests - tables' }
-GASqliteBaseConnectionTest >> testTableNames [
+GASQLiteBaseConnectionTest >> testTableNames [
 
 	| tables |	
 	res := db basicExecute: 'create table x (xk integer, xv integer);'.
@@ -735,7 +735,7 @@ GASqliteBaseConnectionTest >> testTableNames [
 ]
 
 { #category : #'tests - tables' }
-GASqliteBaseConnectionTest >> testTableNamesOfEmptyDatabase [
+GASQLiteBaseConnectionTest >> testTableNamesOfEmptyDatabase [
 
 	| tables |	
 	tables := db tableNames.
@@ -745,7 +745,7 @@ GASqliteBaseConnectionTest >> testTableNamesOfEmptyDatabase [
 ]
 
 { #category : #'tests - types' }
-GASqliteBaseConnectionTest >> testTime [
+GASQLiteBaseConnectionTest >> testTime [
 	"SQLite3 converts a given Time instance into a DateAndTime and stores that."
 	| data today s | 
 	
