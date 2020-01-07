@@ -11,9 +11,9 @@ BaselineOfGarage >> baseline: spec [
 	spec for: #'common' do: [
 		spec blessing: #'baseline'.
 		spec baseline: 'SQLite3' 
-					with: [ spec repository: 'github://pharo-rdbms/Pharo-SQLite3:master/'].
+					with: [ spec repository: 'github://pharo-rdbms/Pharo-SQLite3/src'].
 		spec baseline: 'MySQL' 
-					with: [ spec repository: 'github://pharo-rdbms/Pharo-MySQL:master/'].
+					with: [ spec repository: 'github://pharo-rdbms/Pharo-MySQL'].
 		spec baseline: 'P3' 
 					with: [ spec repository: 'github://svenvc/P3'].
 		spec 
@@ -24,10 +24,10 @@ BaselineOfGarage >> baseline: spec [
 					repository: 'http://smalltalkhub.com/mc/PharoExtras/JSON/main/' ].
 		spec 
 			package: 'Garage';
-			package: 'Garage-MySQL' with: [ spec requires: #('Garage' 'MySQL') ];
-			package: 'Garage-SQLite3' with: [spec requires: #('Garage' 'SQLite3')];
-			package: 'Garage-Postgres' with: [spec requires: #('Garage' 'JSON' )];
-			package: 'Garage-P3' with: [ spec requires: #('Garage' 'P3' )].
+			package: 'Garage-MySQL' with: [ spec requires: #('MySQL' 'Garage' ) ];
+			package: 'Garage-SQLite3' with: [spec requires: #('SQLite3' 'Garage')];
+			package: 'Garage-Postgres' with: [spec requires: #('Garage'  )];
+			package: 'Garage-P3' with: [ spec requires: #('JSON' 'P3' 'Garage'  )].
 		spec 
 			group: 'default' with: #('ALL' );
 			group: 'mysql' with: #('Garage-MySQL' );
