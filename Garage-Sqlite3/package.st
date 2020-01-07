@@ -1,1 +1,1 @@
-Package { #name : #'Garage-Sqlite3' }
+Package { #name : #'Garage-SQLite3' }

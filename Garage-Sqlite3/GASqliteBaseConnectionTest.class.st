@@ -10,7 +10,7 @@ Class {
 		'db',
 		'res'
 	],
-	#category : #'Garage-Sqlite3-Tests'
+	#category : #'Garage-SQLite3-Tests'
 }
 
 { #category : #'tests - DEACTIVATED' }

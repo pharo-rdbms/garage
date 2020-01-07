@@ -1,5 +1,5 @@
 Class {
 	#name : #GAMysqlNoConnectionError,
 	#superclass : #GAMysqlDriverError,
-	#category : 'Garage-Mysql-Errors'
+	#category : 'Garage-MySQL-Errors'
 }

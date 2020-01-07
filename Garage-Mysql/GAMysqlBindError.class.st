@@ -1,5 +1,5 @@
 Class {
 	#name : #GAMysqlBindError,
 	#superclass : #GAMysqlDriverError,
-	#category : 'Garage-Mysql-Errors'
+	#category : 'Garage-MySQL-Errors'
 }

@@ -1,7 +1,7 @@
 Class {
 	#name : #GAMysqlTextRowDataParser,
 	#superclass : #GAMysqlRowDataParser,
-	#category : 'Garage-Mysql-Protocol'
+	#category : 'Garage-MySQL-Protocol'
 }
 
 { #category : #preparing }

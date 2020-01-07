@@ -9,7 +9,7 @@ Class {
 		'scrambleBuff',
 		'scrambledPassword'
 	],
-	#category : 'Garage-Mysql-Protocol'
+	#category : 'Garage-MySQL-Protocol'
 }
 
 { #category : #accessing }

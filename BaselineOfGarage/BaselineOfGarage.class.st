@@ -13,7 +13,7 @@ BaselineOfGarage >> baseline: spec [
 		spec baseline: 'SQLite3' 
 					with: [ spec repository: 'github://pharo-rdbms/Pharo-SQLite3:master/'].
 		spec baseline: 'MySQL' 
-					with: [ spec repository: 'github://pharo-db/Pharo-MySQL:master/'].
+					with: [ spec repository: 'github://pharo-rdbms/Pharo-MySQL:master/'].
 		spec baseline: 'P3' 
 					with: [ spec repository: 'github://svenvc/P3'].
 		spec 

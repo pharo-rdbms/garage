@@ -1,7 +1,7 @@
 Class {
 	#name : #GASqliteConnectionStringTest,
 	#superclass : #TestCase,
-	#category : 'Garage-Sqlite3-Tests'
+	#category : 'Garage-SQLite3-Tests'
 }
 
 { #category : #tests }
@@ -13,7 +13,7 @@ GASqliteConnectionStringTest >> testConnectionCreatesFileDatabase [
 	self deny: dbFile exists.
 	
 	connectionString := GAConnectionString fromString: 'sqlite3:///', dbFile fullName.
-	driver := GASqlite3Driver fromConnectionString: connectionString.
+	driver := GASQLite3Driver fromConnectionString: connectionString.
 	driver connect.
 	
 	self assert: dbFile exists.
@@ -25,7 +25,7 @@ GASqliteConnectionStringTest >> testConnectionCreatesFileDatabase [
 GASqliteConnectionStringTest >> testMemoryDatabase [
 
 	| driver |
-	driver := GASqlite3Driver fromConnectionString: (GAConnectionString fromString: 'sqlite3://memory').
+	driver := GASQLite3Driver fromConnectionString: (GAConnectionString fromString: 'sqlite3://memory').
 	self assert: driver database equals: ':memory:'.
 	
 	self deny: 'memory' asFileReference exists.
@@ -40,7 +40,7 @@ GASqliteConnectionStringTest >> testUnixLikeConnectionString [
 		platform: UnixPlatform new;
 		initializeFromString: 'sqlite3:///Users/guillermopolito/work/temp/dbxtalk/sodbxtest.db';
 		yourself.
-	driver := GASqlite3Driver fromConnectionString: connectionString.
+	driver := GASQLite3Driver fromConnectionString: connectionString.
 	
 	self assert: driver database equals: '/Users/guillermopolito/work/temp/dbxtalk/sodbxtest.db'
 ]
@@ -53,7 +53,7 @@ GASqliteConnectionStringTest >> testWindowsLikeConnectionString [
 		platform: Win32Platform new;
 		initializeFromString: 'sqlite3:///C:\Users\guillermopolito\work\temp\dbxtalk\sodbxtest.db';
 		yourself.
-	driver := GASqlite3Driver fromConnectionString: connectionString.
+	driver := GASQLite3Driver fromConnectionString: connectionString.
 	
 	self assert: driver database equals: 'C:\Users\guillermopolito\work\temp\dbxtalk\sodbxtest.db'
 ]

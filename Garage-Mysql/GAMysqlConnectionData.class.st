@@ -9,7 +9,7 @@ Class {
 		'database',
 		'options'
 	],
-	#category : 'Garage-Mysql-Driver'
+	#category : 'Garage-MySQL-Driver'
 }
 
 { #category : #accessing }

@@ -1,1 +1,1 @@
-Package { #name : #'Garage-Mysql' }
+Package { #name : #'Garage-MySQL' }

@@ -1,5 +1,5 @@
 Class {
 	#name : #GAMysqlUnsupportedProtocolError,
 	#superclass : #GAMysqlDriverError,
-	#category : 'Garage-Mysql-Errors'
+	#category : 'Garage-MySQL-Errors'
 }

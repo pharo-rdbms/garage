@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'query'
 	],
-	#category : 'Garage-Mysql-Protocol'
+	#category : 'Garage-MySQL-Protocol'
 }
 
 { #category : #'as yet unclassified' }

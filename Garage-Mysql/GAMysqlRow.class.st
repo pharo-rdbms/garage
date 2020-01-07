@@ -5,7 +5,7 @@ Class {
 		'columnDescriptors',
 		'columnValues'
 	],
-	#category : 'Garage-Mysql-Driver'
+	#category : 'Garage-MySQL-Driver'
 }
 
 { #category : #accessing }

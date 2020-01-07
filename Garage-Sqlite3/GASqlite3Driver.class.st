@@ -1,17 +1,17 @@
 Class {
-	#name : #GASqlite3Driver,
+	#name : #GASQLite3Driver,
 	#superclass : #GADriver,
-	#category : #'Garage-Sqlite3-Driver'
+	#category : #'Garage-SQLite3-Driver'
 }
 
 { #category : #drivers }
-GASqlite3Driver class >> driverId [
+GASQLite3Driver class >> driverId [
 
 	^ 'sqlite3'
 ]
 
 { #category : #'instance-creation' }
-GASqlite3Driver class >> fromConnectionString: aConnectionString [
+GASQLite3Driver class >> fromConnectionString: aConnectionString [
 
 	^ self new
 		connectionString: aConnectionString;
@@ -22,161 +22,161 @@ GASqlite3Driver class >> fromConnectionString: aConnectionString [
 ]
 
 { #category : #initialize }
-GASqlite3Driver class >> initialize [
+GASQLite3Driver class >> initialize [
 
 	self subscribeDriver
 ]
 
 { #category : #tests }
-GASqlite3Driver class >> newFixture [
+GASQLite3Driver class >> newFixture [
 	
 	^ GADriverSQLiteTestFixture new
 ]
 
 { #category : #encoding }
-GASqlite3Driver class >> supportsEncoding: anEncoding [
+GASQLite3Driver class >> supportsEncoding: anEncoding [
 	
 	^ (ZnCharacterEncoder newForEncoding: anEncoding) = ZnUTF8Encoder new
 ]
 
 { #category : #accessing }
-GASqlite3Driver >> backend [
+GASQLite3Driver >> backend [
 	
 	^ 'sqlite3'
 ]
 
 { #category : #public }
-GASqlite3Driver >> basicExecute: anSQLText [
+GASQLite3Driver >> basicExecute: anSQLText [
 
 	^ implementation basicExecute: anSQLText
 ]
 
 { #category : #transactions }
-GASqlite3Driver >> beginTransaction [
+GASQLite3Driver >> beginTransaction [
 
 	^ implementation beginTransaction
 ]
 
 { #category : #connection }
-GASqlite3Driver >> close [
+GASQLite3Driver >> close [
 
 	^implementation close
 ]
 
 { #category : #schema }
-GASqlite3Driver >> columnsForTable: aTableName [
+GASQLite3Driver >> columnsForTable: aTableName [
 	^implementation columnNamesFor: aTableName
 ]
 
 { #category : #transactions }
-GASqlite3Driver >> commitTransaction [
+GASQLite3Driver >> commitTransaction [
 
 	^ implementation commitTransaction
 ]
 
 { #category : #connection }
-GASqlite3Driver >> connect [
+GASQLite3Driver >> connect [
 	
 	^implementation open
 ]
 
 { #category : #accessing }
-GASqlite3Driver >> database [
+GASQLite3Driver >> database [
 
 	^implementation filename
 ]
 
 { #category : #transactions }
-GASqlite3Driver >> defaultValueAutoCommit [
+GASQLite3Driver >> defaultValueAutoCommit [
 	
 	^ true
 ]
 
 { #category : #query }
-GASqlite3Driver >> execute: aQuery [
+GASQLite3Driver >> execute: aQuery [
 
 	^ self execute: aQuery with: #()
 ]
 
 { #category : #query }
-GASqlite3Driver >> execute: aQuery with: anArray [
+GASQLite3Driver >> execute: aQuery with: anArray [
 
 	^ GASqlite3ResultSet on:(implementation execute: aQuery with: anArray)
 ]
 
 { #category : #finalization }
-GASqlite3Driver >> finalize [
+GASQLite3Driver >> finalize [
 
 	implementation isOpen ifTrue: [implementation close].
 ]
 
 { #category : #transactions }
-GASqlite3Driver >> hasAutoCommit [
+GASQLite3Driver >> hasAutoCommit [
 	
 	^ implementation getAutoCommit
 ]
 
 { #category : #testing }
-GASqlite3Driver >> isConnected [
+GASQLite3Driver >> isConnected [
 
 	^ implementation isNotNil and: [ implementation isOpen ]
 ]
 
 { #category : #testing }
-GASqlite3Driver >> isMemory [
+GASQLite3Driver >> isMemory [
 	
 	^ self connection filename = ':memory:'
 ]
 
 { #category : #'test-support' }
-GASqlite3Driver >> newFixture [
+GASQLite3Driver >> newFixture [
 
 	^ GADriverSQLiteTestFixture new
 ]
 
 { #category : #testing }
-GASqlite3Driver >> notBoundArgumentsFail [
+GASQLite3Driver >> notBoundArgumentsFail [
 	
 	^ false
 ]
 
 { #category : #query }
-GASqlite3Driver >> prepare: aString [ 
+GASQLite3Driver >> prepare: aString [ 
 	
 	^implementation prepare: aString
 ]
 
 { #category : #transactions }
-GASqlite3Driver >> rollbackTransaction [
+GASQLite3Driver >> rollbackTransaction [
 
 	^ implementation rollbackTransaction
 ]
 
 { #category : #testing }
-GASqlite3Driver >> supportsAutomaticQueryEncoding [
+GASQLite3Driver >> supportsAutomaticQueryEncoding [
 	
 	^ false
 ]
 
 { #category : #testing }
-GASqlite3Driver >> supportsCursoredFetch [
+GASQLite3Driver >> supportsCursoredFetch [
 	
 	^ true
 ]
 
 { #category : #testing }
-GASqlite3Driver >> supportsPreparedStatements [
+GASQLite3Driver >> supportsPreparedStatements [
 
 	^ true
 ]
 
 { #category : #testing }
-GASqlite3Driver >> supportsRetrievingGeneratedKeys [
+GASQLite3Driver >> supportsRetrievingGeneratedKeys [
 
 	^ true
 ]
 
 { #category : #schema }
-GASqlite3Driver >> tables [
+GASQLite3Driver >> tables [
 	^implementation tableNames
 ]

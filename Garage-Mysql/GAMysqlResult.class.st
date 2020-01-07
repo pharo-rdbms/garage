@@ -4,7 +4,7 @@ I am simple logical grouping in the hierarchy that supports multi-results in res
 Class {
 	#name : #GAMysqlResult,
 	#superclass : #GAMysqlPacket,
-	#category : 'Garage-Mysql-Protocol'
+	#category : 'Garage-MySQL-Protocol'
 }
 
 { #category : #'as yet unclassified' }

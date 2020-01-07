@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'nullBitMap'
 	],
-	#category : 'Garage-Mysql-Protocol'
+	#category : 'Garage-MySQL-Protocol'
 }
 
 { #category : #testing }

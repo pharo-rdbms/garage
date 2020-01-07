@@ -10,7 +10,7 @@ Class {
 		'netSession',
 		'handshakeInfo'
 	],
-	#category : #'Garage-Mysql-Driver'
+	#category : #'Garage-MySQL-Driver'
 }
 
 { #category : #drivers }

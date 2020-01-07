@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'rows'
 	],
-	#category : #'Garage-Sqlite3-Driver'
+	#category : #'Garage-SQLite3-Driver'
 }
 
 { #category : #'instance creation' }

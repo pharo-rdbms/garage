@@ -5,7 +5,7 @@ Class {
 		'driver',
 		'columnDescriptors'
 	],
-	#category : 'Garage-Mysql-Protocol'
+	#category : 'Garage-MySQL-Protocol'
 }
 
 { #category : #accessing }

@@ -8,7 +8,7 @@ Class {
 		'cursoredFetch',
 		'fetchSize'
 	],
-	#category : 'Garage-Mysql-Driver'
+	#category : 'Garage-MySQL-Driver'
 }
 
 { #category : #'as yet unclassified' }

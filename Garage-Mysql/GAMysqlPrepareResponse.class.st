@@ -8,7 +8,7 @@ Class {
 		'columnDescriptors',
 		'columnEof'
 	],
-	#category : 'Garage-Mysql-Protocol'
+	#category : 'Garage-MySQL-Protocol'
 }
 
 { #category : #'as yet unclassified' }

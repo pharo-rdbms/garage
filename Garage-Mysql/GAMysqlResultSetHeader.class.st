@@ -5,7 +5,7 @@ Class {
 		'fieldCount',
 		'extra'
 	],
-	#category : 'Garage-Mysql-Protocol'
+	#category : 'Garage-MySQL-Protocol'
 }
 
 { #category : #'as yet unclassified' }
