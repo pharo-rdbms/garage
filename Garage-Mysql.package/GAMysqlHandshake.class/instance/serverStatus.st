@@ -1,3 +1,0 @@
-accessing
-serverStatus
-	^ serverStatus

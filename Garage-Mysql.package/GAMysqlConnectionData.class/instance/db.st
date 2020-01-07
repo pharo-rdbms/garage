@@ -1,3 +1,0 @@
-accessing
-db
-	^ database

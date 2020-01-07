@@ -1,4 +1,0 @@
-iterating
-rows
-
-	^ self allRows

@@ -1,1 +1,0 @@
-I represent an SQLite non-ok condition.

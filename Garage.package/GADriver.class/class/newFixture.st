@@ -1,4 +1,0 @@
-tests
-newFixture
-
-	^ self subclassResponsibility

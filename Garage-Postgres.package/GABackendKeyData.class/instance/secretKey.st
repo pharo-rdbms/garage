@@ -1,3 +1,0 @@
-accessing
-secretKey
-	^secretKey

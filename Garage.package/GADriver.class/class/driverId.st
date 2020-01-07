@@ -1,4 +1,0 @@
-drivers
-driverId
-
-	^ self subclassResponsibility

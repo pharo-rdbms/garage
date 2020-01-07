@@ -1,1 +1,0 @@
-I provide a stream-like  API to access a result set. I ask the result set for its rows in a lazy way. If no more rows are available, the #next method will return nil and the #next: method will return just an array with the available rows.

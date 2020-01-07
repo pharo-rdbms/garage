@@ -1,4 +1,0 @@
-stt
-buildStateTransitionTable
-
-	^IdentityDictionary new

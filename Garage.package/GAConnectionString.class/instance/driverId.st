@@ -1,4 +1,0 @@
-accessing
-driverId
-	
-	^ connectionString scheme

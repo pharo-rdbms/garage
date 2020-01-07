@@ -1,4 +1,0 @@
-accessing
-database
-	
-	^ connectionSpec db

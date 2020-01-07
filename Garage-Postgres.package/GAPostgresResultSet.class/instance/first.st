@@ -1,4 +1,0 @@
-accessing
-first
-	
-	^ rows first

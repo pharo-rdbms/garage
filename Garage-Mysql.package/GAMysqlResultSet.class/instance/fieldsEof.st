@@ -1,3 +1,0 @@
-accessing
-fieldsEof
-	^ fieldsEof 

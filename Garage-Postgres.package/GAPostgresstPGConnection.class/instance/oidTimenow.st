@@ -1,4 +1,0 @@
-tests
-oidTimenow
-
-	^ 250

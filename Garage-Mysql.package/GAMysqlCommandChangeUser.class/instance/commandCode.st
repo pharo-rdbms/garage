@@ -1,3 +1,0 @@
-command configuration
-commandCode
-	^ ComChangeUser 

@@ -1,4 +1,0 @@
-transactions
-hasAutoCommit
-	
-	^ true

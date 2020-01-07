@@ -1,4 +1,0 @@
-accessing
-backend
-	
-	^ self subclassResponsibility
